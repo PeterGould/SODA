@@ -1,0 +1,63 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=SODA Arudino library
+
+[WINDOWS]
+main="SODA Arudino library","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_s_o_d_a_8h_source.html
+_s_o_d_a_8cpp.html
+_s_o_d_a_8h.html
+class_s_o_d_a.html
+class_s_o_d_a-members.html
+dir_2ecbd2313a9293c7daff04817bf8c9b2.html
+dir_998ae08a057ec2f0e7b36da23343e438.html
+dir_0bb2a7a5b945607597fc132fc6bc1944.html
+dir_f612d1612b7915ece1413200e9d3a299.html
+dir_9e0e8a5d30a34a566417a86517c245c1.html
+dir_d522931ffa1371640980b621734a4381.html
+index.html
+annotated.html
+classes.html
+functions.html
+functions_func.html
+files.html
+globals.html
+globals_vars.html
+globals_defs.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+ftv2blank.png
+ftv2doc.png
+ftv2folderclosed.png
+ftv2folderopen.png
+ftv2ns.png
+ftv2mo.png
+ftv2cl.png
+ftv2lastnode.png
+ftv2link.png
+ftv2mlastnode.png
+ftv2mnode.png
+ftv2node.png
+ftv2plastnode.png
+ftv2pnode.png
+ftv2vertline.png
+ftv2splitbar.png

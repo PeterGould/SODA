@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_2ecbd2313a9293c7daff04817bf8c9b2" kind="dir">
+    <compoundname>C:/Users/Peter/Documents/Arduino</compoundname>
+    <innerdir refid="dir_0bb2a7a5b945607597fc132fc6bc1944">C:/Users/Peter/Documents/Arduino/libraries</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Peter/Documents/Arduino/"/>
+  </compounddef>
+</doxygen>

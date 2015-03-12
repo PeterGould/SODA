@@ -1,0 +1,431 @@
+.TH "SODA" 3 "Mon Jun 9 2014" "SODA Arudino library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SODA \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SODA\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "long \fBadcRead\fP (int ch, int bit, int gain)"
+.br
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBblinks\fP (int n)"
+.br
+.ti -1c
+.RI "void \fBbufferTime\fP ()"
+.br
+.ti -1c
+.RI "int \fBcheckTime\fP (int place)"
+.br
+.ti -1c
+.RI "void \fBcommunicate\fP ()"
+.br
+.ti -1c
+.RI "void \fBdataDownload\fP ()"
+.br
+.ti -1c
+.RI "void \fBdataLineAdd\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBdataLineAdd\fP (long value)"
+.br
+.ti -1c
+.RI "void \fBdataLineAdd\fP (float value)"
+.br
+.ti -1c
+.RI "void \fBdataLineBegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBdataLineEnd\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetClockTemp\fP ()"
+.br
+.ti -1c
+.RI "long \fBgetID\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetStandby\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetTime\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintBuffer\fP ()"
+.br
+.ti -1c
+.RI "void \fBserialSetTime\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetID\fP (long ID)"
+.br
+.ti -1c
+.RI "void \fBsetStandby\fP (unsigned char val)"
+.br
+.ti -1c
+.RI "void \fBsetTime\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWake\fP (int val, int valType)"
+.br
+.ti -1c
+.RI "int \fBsmoothAnalogRead\fP (int pin1)"
+.br
+.ti -1c
+.RI "int \fBtcReadK\fP (int ch)"
+.br
+.ti -1c
+.RI "void \fBturnOff\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdateTime\fP (int val, int place)"
+.br
+.ti -1c
+.RI "bool \fBusbConnected\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A class to handle basic datalogging functions using Olympia Circuit's \fBSODA\fP HE 1\&.0 Arduino-compatible board\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "long SODA::adcRead (intch, intbit, intgain)"
+Returns a reading from the MCP3424 18-bit analog-digital converter\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIch\fP an int argument specifying channel 1, 2, 3, or 4\&. 
+.br
+\fIbit\fP an int argument specifying the bit encoding 1 = 12, 2=14, 3=16, 4=18 bits\&. 
+.br
+\fIgain\fP as in argument specifying the level of gain from the programmable gain amplifier 1 = x1, 2 = x2, 3 = x4, 4 = x8\&. The return value is adjusted for gain so that a signal of 100 nV with gain = 4 will return a reading of 100 nV\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+long ADC value in nanoVolts (1 * 10^-9 volts)\&. 
+.RE
+.PP
+
+.SS "void SODA::begin ()"
+Initializes an instance of the \fBSODA\fP class\&. Should be called in each sketch before any other \fBSODA\fP functions\&. 
+.SS "void SODA::blinks (intn)"
+Blinks the led connected to pin 13\&. Used for simple communications such as to show when a process in under way or finished\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP an int that sets the number of times to blink\&. Each blink = 100 ms on, 100 ms off\&. 
+.RE
+.PP
+
+.SS "void SODA::bufferTime ()"
+Loads the timeArray into a formatted character buffer\&. Format = YYYY-MM-DD HH:MM:SS 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBgetTime()\fP 
+.RE
+.PP
+
+.SS "int SODA::checkTime (intplace)"
+Returns an int value from the timeArray\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplace\fP an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second)\&. 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBsetTime()\fP 
+.PP
+\fBupdateTime()\fP 
+.RE
+.PP
+
+.SS "void SODA::communicate ()"
+Handles communication between the \fBSODA\fP and a computer/tablet through the serial monitor\&. Commands are sent through a serial connection using the format [XMORE_INFO] where X is a one-character command and MORE_INFO are optional, additional characters used to complete some commands such as setting the clock\&. current commands are: [D] downloads the logger file on the sd card
+.PP
+[I] return the logger_id
+.PP
+[R] runs through the sketch and normally ouputs a line of current readings to the serial connection\&.
+.PP
+[t] prints the current clock time to the serial connection
+.PP
+[TYYYY-MM-DD HH:MM:SS] sets the clock time 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineBegin()\fP 
+.PP
+\fBdataLineAdd()\fP 
+.PP
+\fBdataLineEnd()\fP 
+.RE
+.PP
+set standby so the clock will be reset properly 
+.SS "void SODA::dataDownload ()"
+Reads the contents of the data file from the SD card and streams it through the serial connection\&. The name of the file is set using #define filename definition at the top of \fBSODA\&.h\fP\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineBegin()\fP 
+.PP
+\fBdataLineAdd()\fP 
+.PP
+\fBdataLineEnd()\fP 
+.RE
+.PP
+
+.SS "void SODA::dataLineAdd (intvalue)"
+Adds an int value to the current data line\&. A comma is placed before the value\&. param value an int value 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineBegin()\fP 
+.PP
+\fBdataLineEnd()\fP 
+.RE
+.PP
+
+.SS "void SODA::dataLineAdd (longvalue)"
+Adds a long value to the current data line\&. A comma is placed before the value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP an int value 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineBegin()\fP 
+.PP
+\fBdataLineEnd()\fP 
+.RE
+.PP
+
+.SS "void SODA::dataLineAdd (floatvalue)"
+Adds a float value to the current data line\&. A comma is placed before the value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP an int value 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineBegin()\fP 
+.PP
+\fBdataLineEnd()\fP 
+.RE
+.PP
+
+.SS "void SODA::dataLineBegin ()"
+Begins a new dataline and writes the loggerid and current time separated by a comma\&. The clock is read by the functions so there's no need to make a seperate call to \fBgetTime()\fP\&. The function typically begins writing the line to the SD card\&. If the USB cable is connected it instead writes to the serial monitor\&. If writing to the SD card, the file is opened and left open until a call to \fBdataLineEnd()\fP\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineAdd()\fP 
+.PP
+\fBdataLineEnd()\fP 
+.PP
+\fBgetID()\fP 
+.PP
+\fBgetTime()\fP 
+.PP
+\fBsetID()\fP 
+.RE
+.PP
+
+.SS "void SODA::dataLineEnd ()"
+Terminates a data line\&. Adds a carriage return/line feed to the end of the data line and, if writing to the SD card, then closes the file\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineBegin()\fP 
+.PP
+\fBdataLineAdd()\fP 
+.RE
+.PP
+
+.SS "float SODA::getClockTemp ()"
+Returns the value from the internal temperature sensor in the DS3231 real time clock\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+temperature in Celsius as float 
+.RE
+.PP
+
+.SS "long SODA::getID ()"
+Returns the logger ID stored in microcontroller's EEPROM\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+ID a long integer\&. 
+.RE
+.PP
+
+.SS "int SODA::getStandby ()"
+Retrieves the standby variable that's used to indicate whether the logger is in logging or communication mode\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+standby as unsigned char 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBsetStandby\fP 
+.RE
+.PP
+
+.SS "void SODA::getTime ()"
+Loads the time from the clock to the timeArray\&. (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second)\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBsetTime()\fP 
+.RE
+.PP
+
+.SS "void SODA::printBuffer ()"
+Prints the contents of the buffer[] array, usually a formatted time stamp\&. 
+.SS "void SODA::serialSetTime ()"
+Set the clock based on input from the Serial connection\&. Serial data are first saved to the buffer[] array and then loaded to the timeArray before being sent to the clock\&. Serial data format = 'YYYY-MM-DD HH:MM:SS'\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBsetTime()\fP 
+.RE
+.PP
+
+.SS "void SODA::setID (longID)"
+Writes an logger ID number as a long value to the microcontroller's EEPROM (address 0 to 3)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIID\fP a long value to be used as the logger ID 
+.RE
+.PP
+
+.SS "void SODA::setStandby (unsigned charval)"
+Sets the standby variable to indicate whether the logger is in logging or communication mode\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP unsigned char 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBgetStandby\fP 
+.RE
+.PP
+
+.SS "void SODA::setTime ()"
+Resets the time in the clock to the values from timeArray\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBcheckTime()\fP 
+.PP
+\fBgetTime()\fP 
+.PP
+\fBupdateTime()\fP 
+.RE
+.PP
+
+.SS "void SODA::setWake (intval, intvalType)"
+Sets the clock alarm\&. Used to wake up the logger and begin a new measurement\&. Example: setWake(10,2); sets the alarm to the next 10 minute interval\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP an int time value\&. 
+.br
+\fIvalType\fP an int indicating the units of time 1= secs, 2 = mins, 3=hours\&. 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBturnOff\fP 
+.RE
+.PP
+
+.SS "int SODA::smoothAnalogRead (intpin1)"
+An improved version of analogRead that reduces noise in the measurement 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpin1\fP pin number to make reading 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+an int value of the average reading (between 0 and 1023)\&. 
+.RE
+.PP
+
+.SS "int SODA::tcReadK (intch)"
+Returns a temperature reading from a type K themocouple\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIch\fP an int argument specifying ADC channel 1,2,3, or 4 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a int value of temperature in degrees C\&. Int is used instead of a float since the precision of the measurement cannot realistically support decimal numbers\&. 
+.RE
+.PP
+
+.SS "void SODA::turnOff ()"
+Turns of the datalogger board by resetting the clock alarm pin, thereby shuttting off the voltage regulator\&. 
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBsetWake()\fP 
+.RE
+.PP
+
+.SS "void SODA::updateTime (intval, intplace)"
+Updates the time array\&. Need to run setTime to send time array to clock\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP an int time values\&. 
+.br
+\fIplace\fP an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second)\&. 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBsetTime()\fP 
+.PP
+getTIme() 
+.RE
+.PP
+
+.SS "bool SODA::usbConnected ()"
+Tests to see if the USB is connected\&. A USB connection causes pin 0 of the microcontroller to read as a digital high\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+boolean values where connected = true, not connected = false\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SODA Arudino library from the source code\&.

@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_s_o_d_a_8h" kind="file">
+    <compoundname>SODA.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes local="no">Wire.h</includes>
+    <includedby refid="_s_o_d_a_8cpp" local="yes">C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>Wire.h</label>
+      </node>
+      <node id="8">
+        <label>Arduino.h</label>
+      </node>
+      <node id="7">
+        <label>C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h</label>
+        <link refid="SODA.h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h</label>
+        <link refid="SODA.h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp</label>
+        <link refid="_s_o_d_a_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_o_d_a" prot="public">SODA</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_o_d_a_8h_1a9d2226f7e9458be9bba7d1f1a835ad27" prot="public" static="no">
+        <name>ADC_12BITS</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="51" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1ace4f2485b30601e649bc200a7409c279" prot="public" static="no">
+        <name>ADC_14BITS</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="50" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a65b5afbf078fe48183764d3426f22031" prot="public" static="no">
+        <name>ADC_16BITS</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="49" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a6d9b75963c39815fce95a22afd8feb37" prot="public" static="no">
+        <name>ADC_18BITS</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="48" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1ad06cb9e5985bd216a376f26f22303cd6" prot="public" static="no">
+        <name>ADC_BASE</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="43" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a7d351ed34ca3ff55d1681ee84a243090" prot="public" static="no">
+        <name>ADC_CH1</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="44" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a2bb0c1b2de3aa355244417d9a42a8966" prot="public" static="no">
+        <name>ADC_CH2</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="45" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a6ae98bab335f9d073a58d70e7ba4f844" prot="public" static="no">
+        <name>ADC_CH3</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="46" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a3648bb19b5c3735452fee16c835afc43" prot="public" static="no">
+        <name>ADC_CH4</name>
+        <initializer>0x60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="47" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1ab4912dd56c26f82eb2f8c6e1f9100cef" prot="public" static="no">
+        <name>ADC_CONTROL</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="42" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a1b52f2072afbd743fdd52446aa79d66c" prot="public" static="no">
+        <name>ADC_GAIN1</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="52" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1ad3379317af1d519878ad3482cf683573" prot="public" static="no">
+        <name>ADC_GAIN2</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="53" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1ae2ec8017a25a09268c290a642bd9b933" prot="public" static="no">
+        <name>ADC_GAIN4</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="54" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1af3b1171580b71ded9663cb45e463d378" prot="public" static="no">
+        <name>ADC_GAIN8</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="55" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a5fd3aabe18504a5314a5d0e71e3bc495" prot="public" static="no">
+        <name>ADC_I2C_ADDR</name>
+        <initializer>0x6E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="41" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1aad01f535e631d4f939e8cdf5fab46b3f" prot="public" static="no">
+        <name>CLOCK_ALARM1_ADDR</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="38" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a5b32a211a54e92457ebf5ebba13302be" prot="public" static="no">
+        <name>CLOCK_ALARM_STATUS</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="39" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a4fdccb47c51fb69f471233e966876bf6" prot="public" static="no">
+        <name>CLOCK_CONTROL_ADDR</name>
+        <initializer>0x0E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="34" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a3b1e1dd836f5aba79285b5eeafc2646b" prot="public" static="no">
+        <name>CLOCK_I2C_ADDR</name>
+        <initializer>0x68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="33" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1aee2245fb4caf68f0fc571d8b24ff5626" prot="public" static="no">
+        <name>CLOCK_SETUP</name>
+        <initializer>0x5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="37" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a9a34706a5bd72f4ceb62ac812b535c90" prot="public" static="no">
+        <name>CLOCK_TEMPERATURE_ADDR</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="35" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a7cc8eff3a86c4756ef854cf944a5dd5e" prot="public" static="no">
+        <name>CLOCK_TIME_CAL_ADDR</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="36" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a8de29f7c8bbf1a81cc6e71ac602032d3" prot="public" static="no">
+        <name>FILENAME</name>
+        <initializer>&quot;DATA.CSV&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="24" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_o_d_a_8h_1a2b3671e090b0831bfba7d12cfcf2d481" prot="public" static="no">
+        <name>LEDPIN</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="57" column="9" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="comment">//The<sp/>output<sp/>filename<sp/>can<sp/>be<sp/>changed<sp/>by<sp/>changing<sp/>the<sp/>character<sp/>string<sp/>below</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FILENAME</highlight></codeline>
+<codeline lineno="24" refid="_s_o_d_a_8h_1a8de29f7c8bbf1a81cc6e71ac602032d3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FILENAME<sp/>&quot;DATA.CSV&quot;</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="comment">//Note<sp/>that<sp/>the<sp/>SD<sp/>functions<sp/>can<sp/>be<sp/>removed<sp/>by<sp/>uncommenting<sp/>the<sp/>line<sp/>below:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>NO_SD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__SODA__h</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__SODA__h</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//clock<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_s_o_d_a_8h_1a3b1e1dd836f5aba79285b5eeafc2646b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_I2C_ADDR<sp/><sp/><sp/>0x68</highlight></codeline>
+<codeline lineno="34" refid="_s_o_d_a_8h_1a4fdccb47c51fb69f471233e966876bf6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_CONTROL_ADDR<sp/>0x0E</highlight></codeline>
+<codeline lineno="35" refid="_s_o_d_a_8h_1a9a34706a5bd72f4ceb62ac812b535c90" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_TEMPERATURE_ADDR<sp/><sp/><sp/><sp/><sp/>0x11</highlight></codeline>
+<codeline lineno="36" refid="_s_o_d_a_8h_1a7cc8eff3a86c4756ef854cf944a5dd5e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_TIME_CAL_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="37" refid="_s_o_d_a_8h_1aee2245fb4caf68f0fc571d8b24ff5626" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_SETUP<sp/>0x5<sp/>//allow<sp/>interrupts<sp/>on<sp/>alarm1</highlight></codeline>
+<codeline lineno="38" refid="_s_o_d_a_8h_1aad01f535e631d4f939e8cdf5fab46b3f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_ALARM1_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07</highlight></codeline>
+<codeline lineno="39" refid="_s_o_d_a_8h_1a5b32a211a54e92457ebf5ebba13302be" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_ALARM_STATUS<sp/>0x0F</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="comment">//ADC<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_s_o_d_a_8h_1a5fd3aabe18504a5314a5d0e71e3bc495" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_I2C_ADDR<sp/>0x6E</highlight></codeline>
+<codeline lineno="42" refid="_s_o_d_a_8h_1ab4912dd56c26f82eb2f8c6e1f9100cef" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CONTROL<sp/>0x00</highlight></codeline>
+<codeline lineno="43" refid="_s_o_d_a_8h_1ad06cb9e5985bd216a376f26f22303cd6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_BASE<sp/>0x80<sp/><sp/>//one<sp/>shot<sp/>conversion<sp/>model</highlight></codeline>
+<codeline lineno="44" refid="_s_o_d_a_8h_1a7d351ed34ca3ff55d1681ee84a243090" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CH1<sp/>0x00</highlight></codeline>
+<codeline lineno="45" refid="_s_o_d_a_8h_1a2bb0c1b2de3aa355244417d9a42a8966" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CH2<sp/>0x20</highlight></codeline>
+<codeline lineno="46" refid="_s_o_d_a_8h_1a6ae98bab335f9d073a58d70e7ba4f844" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CH3<sp/>0x40</highlight></codeline>
+<codeline lineno="47" refid="_s_o_d_a_8h_1a3648bb19b5c3735452fee16c835afc43" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CH4<sp/>0x60</highlight></codeline>
+<codeline lineno="48" refid="_s_o_d_a_8h_1a6d9b75963c39815fce95a22afd8feb37" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_18BITS<sp/>0x0C</highlight></codeline>
+<codeline lineno="49" refid="_s_o_d_a_8h_1a65b5afbf078fe48183764d3426f22031" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_16BITS<sp/>0x08</highlight></codeline>
+<codeline lineno="50" refid="_s_o_d_a_8h_1ace4f2485b30601e649bc200a7409c279" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_14BITS<sp/>0x04</highlight></codeline>
+<codeline lineno="51" refid="_s_o_d_a_8h_1a9d2226f7e9458be9bba7d1f1a835ad27" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_12BITS<sp/>0x00</highlight></codeline>
+<codeline lineno="52" refid="_s_o_d_a_8h_1a1b52f2072afbd743fdd52446aa79d66c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_GAIN1<sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="53" refid="_s_o_d_a_8h_1ad3379317af1d519878ad3482cf683573" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_GAIN2<sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="54" refid="_s_o_d_a_8h_1ae2ec8017a25a09268c290a642bd9b933" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_GAIN4<sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="55" refid="_s_o_d_a_8h_1af3b1171580b71ded9663cb45e463d378" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_GAIN8<sp/><sp/>0x03</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="comment">//MISC<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_s_o_d_a_8h_1a2b3671e090b0831bfba7d12cfcf2d481" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEDPIN<sp/>13<sp/><sp/><sp/>//<sp/>LED<sp/>connected<sp/>to<sp/>digital<sp/>pin<sp/>13</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="63" refid="class_s_o_d_a" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_d_a" kindref="compound">SODA</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setAddress(uint8_t,uint8_t,uint8_t);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>getAddress(uint8_t,uint8_t);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dectobcd(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bcdtodec(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>runSD(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parseCommand(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>standby;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//variables<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>static<sp/>char<sp/>buffer[];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>static<sp/>int<sp/>timeArray[];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a95ec5e2456f6402478c101dad0b735ce" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//@I<sp/>Clock<sp/>Functions</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" kindref="member">updateTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>place);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a9cca81f7fda16982cc1eb4030774425b" kindref="member">checkTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>place);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a93c1adcc876e1681db69d992153ffb28" kindref="member">bufferTime</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1abac684bb54a9d346337b6e0ed9243e40" kindref="member">serialSetTime</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1abce8c3a638c71d842ab79af3120138c5" kindref="member">getClockTemp</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a6acf21ab1e6db2b8861715e8a5a7f37f" kindref="member">setWake</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valType);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a135382c3d907496f74c852965b31ffdd" kindref="member">turnOff</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1aa78eec946be2a371ae844fa44f6e4d96" kindref="member">setStandby</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a98719fd95cb6fd3c70f221e62dbf06f4" kindref="member">getStandby</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//@I<sp/>ADC<sp/>Functions</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a30b86308dcb295c5e86b79049d3bafdd" kindref="member">adcRead</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ch,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gain);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a1f1aa095370775ed2d94ca6d842ff213" kindref="member">tcReadK</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a55eaa23fbeb729b6d348a0d6c4e3c9b3" kindref="member">smoothAnalogRead</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pin1);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//@I<sp/>Data<sp/>output<sp/>functions</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" kindref="member">dataLineBegin</ref>();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd</ref>();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a6a65882362bba508fbc8c0d5e45badc1" kindref="member">dataDownload</ref>();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//@I<sp/>communication<sp/>functions</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a15a8c710209fd041f14bb448fd17c9b2" kindref="member">communicate</ref>();</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//@I<sp/>misc<sp/>function</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1aa79b275be71dbfd5662608add4715b87" kindref="member">setID</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a01ecfd6c2f14d0f5507a4384b34fb46a" kindref="member">getID</ref>();</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1af1e78fa91c8cb363a93320acaacf0e7f" kindref="member">printBuffer</ref>();</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1a5ef9772aba25fe5b19bc0d647d8c899a" kindref="member">usbConnected</ref>();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_d_a_1af1752112fc06931fa9634f48cf65e420" kindref="member">blinks</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h"/>
+  </compounddef>
+</doxygen>

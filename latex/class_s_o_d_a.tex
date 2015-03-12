@@ -1,0 +1,444 @@
+\hypertarget{class_s_o_d_a}{\section{S\-O\-D\-A Class Reference}
+\label{class_s_o_d_a}\index{S\-O\-D\-A@{S\-O\-D\-A}}
+}
+
+
+{\ttfamily \#include $<$S\-O\-D\-A.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{class_s_o_d_a_a30b86308dcb295c5e86b79049d3bafdd}{adc\-Read} (int ch, int bit, int gain)
+\item 
+void \hyperlink{class_s_o_d_a_a95ec5e2456f6402478c101dad0b735ce}{begin} ()
+\item 
+void \hyperlink{class_s_o_d_a_af1752112fc06931fa9634f48cf65e420}{blinks} (int n)
+\item 
+void \hyperlink{class_s_o_d_a_a93c1adcc876e1681db69d992153ffb28}{buffer\-Time} ()
+\item 
+int \hyperlink{class_s_o_d_a_a9cca81f7fda16982cc1eb4030774425b}{check\-Time} (int place)
+\item 
+void \hyperlink{class_s_o_d_a_a15a8c710209fd041f14bb448fd17c9b2}{communicate} ()
+\item 
+void \hyperlink{class_s_o_d_a_a6a65882362bba508fbc8c0d5e45badc1}{data\-Download} ()
+\item 
+void \hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add} (int value)
+\item 
+void \hyperlink{class_s_o_d_a_a1c38451ceb71b3e644eb16c11fcfacd7}{data\-Line\-Add} (long value)
+\item 
+void \hyperlink{class_s_o_d_a_aa5263a65ba6929e23c85bc0d47bbae32}{data\-Line\-Add} (float value)
+\item 
+void \hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin} ()
+\item 
+void \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End} ()
+\item 
+float \hyperlink{class_s_o_d_a_abce8c3a638c71d842ab79af3120138c5}{get\-Clock\-Temp} ()
+\item 
+long \hyperlink{class_s_o_d_a_a01ecfd6c2f14d0f5507a4384b34fb46a}{get\-I\-D} ()
+\item 
+int \hyperlink{class_s_o_d_a_a98719fd95cb6fd3c70f221e62dbf06f4}{get\-Standby} ()
+\item 
+void \hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time} ()
+\item 
+void \hyperlink{class_s_o_d_a_af1e78fa91c8cb363a93320acaacf0e7f}{print\-Buffer} ()
+\item 
+void \hyperlink{class_s_o_d_a_abac684bb54a9d346337b6e0ed9243e40}{serial\-Set\-Time} ()
+\item 
+void \hyperlink{class_s_o_d_a_aa79b275be71dbfd5662608add4715b87}{set\-I\-D} (long I\-D)
+\item 
+void \hyperlink{class_s_o_d_a_aa78eec946be2a371ae844fa44f6e4d96}{set\-Standby} (unsigned char val)
+\item 
+void \hyperlink{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{set\-Time} ()
+\item 
+void \hyperlink{class_s_o_d_a_a6acf21ab1e6db2b8861715e8a5a7f37f}{set\-Wake} (int val, int val\-Type)
+\item 
+int \hyperlink{class_s_o_d_a_a55eaa23fbeb729b6d348a0d6c4e3c9b3}{smooth\-Analog\-Read} (int pin1)
+\item 
+int \hyperlink{class_s_o_d_a_a1f1aa095370775ed2d94ca6d842ff213}{tc\-Read\-K} (int ch)
+\item 
+void \hyperlink{class_s_o_d_a_a135382c3d907496f74c852965b31ffdd}{turn\-Off} ()
+\item 
+void \hyperlink{class_s_o_d_a_a17bd73a287665e022f8e955db65618b8}{update\-Time} (int val, int place)
+\item 
+bool \hyperlink{class_s_o_d_a_a5ef9772aba25fe5b19bc0d647d8c899a}{usb\-Connected} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class to handle basic datalogging functions using Olympia Circuit's \hyperlink{class_s_o_d_a}{S\-O\-D\-A} H\-E 1.\-0 Arduino-\/compatible board. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_s_o_d_a_a30b86308dcb295c5e86b79049d3bafdd}{\index{S\-O\-D\-A@{S\-O\-D\-A}!adc\-Read@{adc\-Read}}
+\index{adc\-Read@{adc\-Read}!SODA@{S\-O\-D\-A}}
+\subsubsection[{adc\-Read}]{\setlength{\rightskip}{0pt plus 5cm}long S\-O\-D\-A\-::adc\-Read (
+\begin{DoxyParamCaption}
+\item[{int}]{ch, }
+\item[{int}]{bit, }
+\item[{int}]{gain}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a30b86308dcb295c5e86b79049d3bafdd}
+Returns a reading from the M\-C\-P3424 18-\/bit analog-\/digital converter. 
+\begin{DoxyParams}{Parameters}
+{\em ch} & an int argument specifying channel 1, 2, 3, or 4. \\
+\hline
+{\em bit} & an int argument specifying the bit encoding 1 = 12, 2=14, 3=16, 4=18 bits. \\
+\hline
+{\em gain} & as in argument specifying the level of gain from the programmable gain amplifier 1 = x1, 2 = x2, 3 = x4, 4 = x8. The return value is adjusted for gain so that a signal of 100 n\-V with gain = 4 will return a reading of 100 n\-V. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long A\-D\-C value in nano\-Volts (1 $\ast$ 10$^\wedge$-\/9 volts). 
+\end{DoxyReturn}
+\hypertarget{class_s_o_d_a_a95ec5e2456f6402478c101dad0b735ce}{\index{S\-O\-D\-A@{S\-O\-D\-A}!begin@{begin}}
+\index{begin@{begin}!SODA@{S\-O\-D\-A}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a95ec5e2456f6402478c101dad0b735ce}
+Initializes an instance of the \hyperlink{class_s_o_d_a}{S\-O\-D\-A} class. Should be called in each sketch before any other \hyperlink{class_s_o_d_a}{S\-O\-D\-A} functions. \hypertarget{class_s_o_d_a_af1752112fc06931fa9634f48cf65e420}{\index{S\-O\-D\-A@{S\-O\-D\-A}!blinks@{blinks}}
+\index{blinks@{blinks}!SODA@{S\-O\-D\-A}}
+\subsubsection[{blinks}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::blinks (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_af1752112fc06931fa9634f48cf65e420}
+Blinks the led connected to pin 13. Used for simple communications such as to show when a process in under way or finished. 
+\begin{DoxyParams}{Parameters}
+{\em n} & an int that sets the number of times to blink. Each blink = 100 ms on, 100 ms off. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_s_o_d_a_a93c1adcc876e1681db69d992153ffb28}{\index{S\-O\-D\-A@{S\-O\-D\-A}!buffer\-Time@{buffer\-Time}}
+\index{buffer\-Time@{buffer\-Time}!SODA@{S\-O\-D\-A}}
+\subsubsection[{buffer\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::buffer\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a93c1adcc876e1681db69d992153ffb28}
+Loads the time\-Array into a formatted character buffer. Format = Y\-Y\-Y\-Y-\/\-M\-M-\/\-D\-D H\-H\-:\-M\-M\-:S\-S \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a9cca81f7fda16982cc1eb4030774425b}{\index{S\-O\-D\-A@{S\-O\-D\-A}!check\-Time@{check\-Time}}
+\index{check\-Time@{check\-Time}!SODA@{S\-O\-D\-A}}
+\subsubsection[{check\-Time}]{\setlength{\rightskip}{0pt plus 5cm}int S\-O\-D\-A\-::check\-Time (
+\begin{DoxyParamCaption}
+\item[{int}]{place}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a9cca81f7fda16982cc1eb4030774425b}
+Returns an int value from the time\-Array. 
+\begin{DoxyParams}{Parameters}
+{\em place} & an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{set\-Time()} 
+
+\hyperlink{class_s_o_d_a_a17bd73a287665e022f8e955db65618b8}{update\-Time()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a15a8c710209fd041f14bb448fd17c9b2}{\index{S\-O\-D\-A@{S\-O\-D\-A}!communicate@{communicate}}
+\index{communicate@{communicate}!SODA@{S\-O\-D\-A}}
+\subsubsection[{communicate}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::communicate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a15a8c710209fd041f14bb448fd17c9b2}
+Handles communication between the \hyperlink{class_s_o_d_a}{S\-O\-D\-A} and a computer/tablet through the serial monitor. Commands are sent through a serial connection using the format \mbox{[}X\-M\-O\-R\-E\-\_\-\-I\-N\-F\-O\mbox{]} where X is a one-\/character command and M\-O\-R\-E\-\_\-\-I\-N\-F\-O are optional, additional characters used to complete some commands such as setting the clock. current commands are\-: \mbox{[}D\mbox{]} downloads the logger file on the sd card
+
+\mbox{[}I\mbox{]} return the logger\-\_\-id
+
+\mbox{[}R\mbox{]} runs through the sketch and normally ouputs a line of current readings to the serial connection.
+
+\mbox{[}t\mbox{]} prints the current clock time to the serial connection
+
+\mbox{[}T\-Y\-Y\-Y\-Y-\/\-M\-M-\/\-D\-D H\-H\-:\-M\-M\-:S\-S\mbox{]} sets the clock time \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+
+\hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
+
+\hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
+\end{DoxySeeAlso}
+set standby so the clock will be reset properly \hypertarget{class_s_o_d_a_a6a65882362bba508fbc8c0d5e45badc1}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Download@{data\-Download}}
+\index{data\-Download@{data\-Download}!SODA@{S\-O\-D\-A}}
+\subsubsection[{data\-Download}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Download (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a6a65882362bba508fbc8c0d5e45badc1}
+Reads the contents of the data file from the S\-D card and streams it through the serial connection. The name of the file is set using \#define filename definition at the top of \hyperlink{_s_o_d_a_8h}{S\-O\-D\-A.\-h}. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+
+\hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
+
+\hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-Add@{data\-Line\-Add}}
+\index{data\-Line\-Add@{data\-Line\-Add}!SODA@{S\-O\-D\-A}}
+\subsubsection[{data\-Line\-Add}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Line\-Add (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}
+Adds an int value to the current data line. A comma is placed before the value. param value an int value \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+
+\hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a1c38451ceb71b3e644eb16c11fcfacd7}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-Add@{data\-Line\-Add}}
+\index{data\-Line\-Add@{data\-Line\-Add}!SODA@{S\-O\-D\-A}}
+\subsubsection[{data\-Line\-Add}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Line\-Add (
+\begin{DoxyParamCaption}
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a1c38451ceb71b3e644eb16c11fcfacd7}
+Adds a long value to the current data line. A comma is placed before the value. 
+\begin{DoxyParams}{Parameters}
+{\em value} & an int value \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+
+\hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_aa5263a65ba6929e23c85bc0d47bbae32}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-Add@{data\-Line\-Add}}
+\index{data\-Line\-Add@{data\-Line\-Add}!SODA@{S\-O\-D\-A}}
+\subsubsection[{data\-Line\-Add}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Line\-Add (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_aa5263a65ba6929e23c85bc0d47bbae32}
+Adds a float value to the current data line. A comma is placed before the value. 
+\begin{DoxyParams}{Parameters}
+{\em value} & an int value \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+
+\hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-Begin@{data\-Line\-Begin}}
+\index{data\-Line\-Begin@{data\-Line\-Begin}!SODA@{S\-O\-D\-A}}
+\subsubsection[{data\-Line\-Begin}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Line\-Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}
+Begins a new dataline and writes the loggerid and current time separated by a comma. The clock is read by the functions so there's no need to make a seperate call to \hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time()}. The function typically begins writing the line to the S\-D card. If the U\-S\-B cable is connected it instead writes to the serial monitor. If writing to the S\-D card, the file is opened and left open until a call to \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()}. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
+
+\hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
+
+\hyperlink{class_s_o_d_a_a01ecfd6c2f14d0f5507a4384b34fb46a}{get\-I\-D()} 
+
+\hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time()} 
+
+\hyperlink{class_s_o_d_a_aa79b275be71dbfd5662608add4715b87}{set\-I\-D()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-End@{data\-Line\-End}}
+\index{data\-Line\-End@{data\-Line\-End}!SODA@{S\-O\-D\-A}}
+\subsubsection[{data\-Line\-End}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Line\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}
+Terminates a data line. Adds a carriage return/line feed to the end of the data line and, if writing to the S\-D card, then closes the file. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+
+\hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_abce8c3a638c71d842ab79af3120138c5}{\index{S\-O\-D\-A@{S\-O\-D\-A}!get\-Clock\-Temp@{get\-Clock\-Temp}}
+\index{get\-Clock\-Temp@{get\-Clock\-Temp}!SODA@{S\-O\-D\-A}}
+\subsubsection[{get\-Clock\-Temp}]{\setlength{\rightskip}{0pt plus 5cm}float S\-O\-D\-A\-::get\-Clock\-Temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_abce8c3a638c71d842ab79af3120138c5}
+Returns the value from the internal temperature sensor in the D\-S3231 real time clock. \begin{DoxyReturn}{Returns}
+temperature in Celsius as float 
+\end{DoxyReturn}
+\hypertarget{class_s_o_d_a_a01ecfd6c2f14d0f5507a4384b34fb46a}{\index{S\-O\-D\-A@{S\-O\-D\-A}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!SODA@{S\-O\-D\-A}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}long S\-O\-D\-A\-::get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a01ecfd6c2f14d0f5507a4384b34fb46a}
+Returns the logger I\-D stored in microcontroller's E\-E\-P\-R\-O\-M. \begin{DoxyReturn}{Returns}
+I\-D a long integer. 
+\end{DoxyReturn}
+\hypertarget{class_s_o_d_a_a98719fd95cb6fd3c70f221e62dbf06f4}{\index{S\-O\-D\-A@{S\-O\-D\-A}!get\-Standby@{get\-Standby}}
+\index{get\-Standby@{get\-Standby}!SODA@{S\-O\-D\-A}}
+\subsubsection[{get\-Standby}]{\setlength{\rightskip}{0pt plus 5cm}int S\-O\-D\-A\-::get\-Standby (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a98719fd95cb6fd3c70f221e62dbf06f4}
+Retrieves the standby variable that's used to indicate whether the logger is in logging or communication mode. \begin{DoxyReturn}{Returns}
+standby as unsigned char 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_aa78eec946be2a371ae844fa44f6e4d96}{set\-Standby} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{\index{S\-O\-D\-A@{S\-O\-D\-A}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!SODA@{S\-O\-D\-A}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}
+Loads the time from the clock to the time\-Array. (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{set\-Time()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_af1e78fa91c8cb363a93320acaacf0e7f}{\index{S\-O\-D\-A@{S\-O\-D\-A}!print\-Buffer@{print\-Buffer}}
+\index{print\-Buffer@{print\-Buffer}!SODA@{S\-O\-D\-A}}
+\subsubsection[{print\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::print\-Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_af1e78fa91c8cb363a93320acaacf0e7f}
+Prints the contents of the buffer\mbox{[}\mbox{]} array, usually a formatted time stamp. \hypertarget{class_s_o_d_a_abac684bb54a9d346337b6e0ed9243e40}{\index{S\-O\-D\-A@{S\-O\-D\-A}!serial\-Set\-Time@{serial\-Set\-Time}}
+\index{serial\-Set\-Time@{serial\-Set\-Time}!SODA@{S\-O\-D\-A}}
+\subsubsection[{serial\-Set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::serial\-Set\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_abac684bb54a9d346337b6e0ed9243e40}
+Set the clock based on input from the Serial connection. Serial data are first saved to the buffer\mbox{[}\mbox{]} array and then loaded to the time\-Array before being sent to the clock. Serial data format = 'Y\-Y\-Y\-Y-\/\-M\-M-\/\-D\-D H\-H\-:\-M\-M\-:S\-S'. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{set\-Time()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_aa79b275be71dbfd5662608add4715b87}{\index{S\-O\-D\-A@{S\-O\-D\-A}!set\-I\-D@{set\-I\-D}}
+\index{set\-I\-D@{set\-I\-D}!SODA@{S\-O\-D\-A}}
+\subsubsection[{set\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::set\-I\-D (
+\begin{DoxyParamCaption}
+\item[{long}]{I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_aa79b275be71dbfd5662608add4715b87}
+Writes an logger I\-D number as a long value to the microcontroller's E\-E\-P\-R\-O\-M (address 0 to 3). 
+\begin{DoxyParams}{Parameters}
+{\em I\-D} & a long value to be used as the logger I\-D \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_s_o_d_a_aa78eec946be2a371ae844fa44f6e4d96}{\index{S\-O\-D\-A@{S\-O\-D\-A}!set\-Standby@{set\-Standby}}
+\index{set\-Standby@{set\-Standby}!SODA@{S\-O\-D\-A}}
+\subsubsection[{set\-Standby}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::set\-Standby (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{val}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_aa78eec946be2a371ae844fa44f6e4d96}
+Sets the standby variable to indicate whether the logger is in logging or communication mode. 
+\begin{DoxyParams}{Parameters}
+{\em val} & unsigned char \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a98719fd95cb6fd3c70f221e62dbf06f4}{get\-Standby} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{\index{S\-O\-D\-A@{S\-O\-D\-A}!set\-Time@{set\-Time}}
+\index{set\-Time@{set\-Time}!SODA@{S\-O\-D\-A}}
+\subsubsection[{set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::set\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}
+Resets the time in the clock to the values from time\-Array. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a9cca81f7fda16982cc1eb4030774425b}{check\-Time()} 
+
+\hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time()} 
+
+\hyperlink{class_s_o_d_a_a17bd73a287665e022f8e955db65618b8}{update\-Time()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a6acf21ab1e6db2b8861715e8a5a7f37f}{\index{S\-O\-D\-A@{S\-O\-D\-A}!set\-Wake@{set\-Wake}}
+\index{set\-Wake@{set\-Wake}!SODA@{S\-O\-D\-A}}
+\subsubsection[{set\-Wake}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::set\-Wake (
+\begin{DoxyParamCaption}
+\item[{int}]{val, }
+\item[{int}]{val\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a6acf21ab1e6db2b8861715e8a5a7f37f}
+Sets the clock alarm. Used to wake up the logger and begin a new measurement. Example\-: set\-Wake(10,2); sets the alarm to the next 10 minute interval. 
+\begin{DoxyParams}{Parameters}
+{\em val} & an int time value. \\
+\hline
+{\em val\-Type} & an int indicating the units of time 1= secs, 2 = mins, 3=hours. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a135382c3d907496f74c852965b31ffdd}{turn\-Off} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a55eaa23fbeb729b6d348a0d6c4e3c9b3}{\index{S\-O\-D\-A@{S\-O\-D\-A}!smooth\-Analog\-Read@{smooth\-Analog\-Read}}
+\index{smooth\-Analog\-Read@{smooth\-Analog\-Read}!SODA@{S\-O\-D\-A}}
+\subsubsection[{smooth\-Analog\-Read}]{\setlength{\rightskip}{0pt plus 5cm}int S\-O\-D\-A\-::smooth\-Analog\-Read (
+\begin{DoxyParamCaption}
+\item[{int}]{pin1}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a55eaa23fbeb729b6d348a0d6c4e3c9b3}
+An improved version of analog\-Read that reduces noise in the measurement 
+\begin{DoxyParams}{Parameters}
+{\em pin1} & pin number to make reading \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int value of the average reading (between 0 and 1023). 
+\end{DoxyReturn}
+\hypertarget{class_s_o_d_a_a1f1aa095370775ed2d94ca6d842ff213}{\index{S\-O\-D\-A@{S\-O\-D\-A}!tc\-Read\-K@{tc\-Read\-K}}
+\index{tc\-Read\-K@{tc\-Read\-K}!SODA@{S\-O\-D\-A}}
+\subsubsection[{tc\-Read\-K}]{\setlength{\rightskip}{0pt plus 5cm}int S\-O\-D\-A\-::tc\-Read\-K (
+\begin{DoxyParamCaption}
+\item[{int}]{ch}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a1f1aa095370775ed2d94ca6d842ff213}
+Returns a temperature reading from a type K themocouple. 
+\begin{DoxyParams}{Parameters}
+{\em ch} & an int argument specifying A\-D\-C channel 1,2,3, or 4 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a int value of temperature in degrees C. Int is used instead of a float since the precision of the measurement cannot realistically support decimal numbers. 
+\end{DoxyReturn}
+\hypertarget{class_s_o_d_a_a135382c3d907496f74c852965b31ffdd}{\index{S\-O\-D\-A@{S\-O\-D\-A}!turn\-Off@{turn\-Off}}
+\index{turn\-Off@{turn\-Off}!SODA@{S\-O\-D\-A}}
+\subsubsection[{turn\-Off}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::turn\-Off (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a135382c3d907496f74c852965b31ffdd}
+Turns of the datalogger board by resetting the clock alarm pin, thereby shuttting off the voltage regulator. \begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a6acf21ab1e6db2b8861715e8a5a7f37f}{set\-Wake()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a17bd73a287665e022f8e955db65618b8}{\index{S\-O\-D\-A@{S\-O\-D\-A}!update\-Time@{update\-Time}}
+\index{update\-Time@{update\-Time}!SODA@{S\-O\-D\-A}}
+\subsubsection[{update\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::update\-Time (
+\begin{DoxyParamCaption}
+\item[{int}]{val, }
+\item[{int}]{place}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a17bd73a287665e022f8e955db65618b8}
+Updates the time array. Need to run set\-Time to send time array to clock. 
+\begin{DoxyParams}{Parameters}
+{\em val} & an int time values. \\
+\hline
+{\em place} & an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{set\-Time()} 
+
+get\-T\-Ime() 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a5ef9772aba25fe5b19bc0d647d8c899a}{\index{S\-O\-D\-A@{S\-O\-D\-A}!usb\-Connected@{usb\-Connected}}
+\index{usb\-Connected@{usb\-Connected}!SODA@{S\-O\-D\-A}}
+\subsubsection[{usb\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-O\-D\-A\-::usb\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_a5ef9772aba25fe5b19bc0d647d8c899a}
+Tests to see if the U\-S\-B is connected. A U\-S\-B connection causes pin 0 of the microcontroller to read as a digital high. \begin{DoxyReturn}{Returns}
+boolean values where connected = true, not connected = false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Peter/\-Documents/\-Arduino/libraries/\-S\-O\-D\-A/\hyperlink{_s_o_d_a_8h}{S\-O\-D\-A.\-h}\item 
+C\-:/\-Users/\-Peter/\-Documents/\-Arduino/libraries/\-S\-O\-D\-A/\hyperlink{_s_o_d_a_8cpp}{S\-O\-D\-A.\-cpp}\end{DoxyCompactItemize}

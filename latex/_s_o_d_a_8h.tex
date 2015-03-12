@@ -1,0 +1,136 @@
+\hypertarget{_s_o_d_a_8h}{\section{C\-:/\-Users/\-Peter/\-Documents/\-Arduino/libraries/\-S\-O\-D\-A/\-S\-O\-D\-A.h File Reference}
+\label{_s_o_d_a_8h}\index{C\-:/\-Users/\-Peter/\-Documents/\-Arduino/libraries/\-S\-O\-D\-A/\-S\-O\-D\-A.\-h@{C\-:/\-Users/\-Peter/\-Documents/\-Arduino/libraries/\-S\-O\-D\-A/\-S\-O\-D\-A.\-h}}
+}
+{\ttfamily \#include $<$Arduino.\-h$>$}\\*
+{\ttfamily \#include $<$Wire.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_s_o_d_a}{S\-O\-D\-A}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a9d2226f7e9458be9bba7d1f1a835ad27}{A\-D\-C\-\_\-12\-B\-I\-T\-S}~0x00
+\item 
+\#define \hyperlink{_s_o_d_a_8h_ace4f2485b30601e649bc200a7409c279}{A\-D\-C\-\_\-14\-B\-I\-T\-S}~0x04
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a65b5afbf078fe48183764d3426f22031}{A\-D\-C\-\_\-16\-B\-I\-T\-S}~0x08
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a6d9b75963c39815fce95a22afd8feb37}{A\-D\-C\-\_\-18\-B\-I\-T\-S}~0x0\-C
+\item 
+\#define \hyperlink{_s_o_d_a_8h_ad06cb9e5985bd216a376f26f22303cd6}{A\-D\-C\-\_\-\-B\-A\-S\-E}~0x80
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a7d351ed34ca3ff55d1681ee84a243090}{A\-D\-C\-\_\-\-C\-H1}~0x00
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a2bb0c1b2de3aa355244417d9a42a8966}{A\-D\-C\-\_\-\-C\-H2}~0x20
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a6ae98bab335f9d073a58d70e7ba4f844}{A\-D\-C\-\_\-\-C\-H3}~0x40
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a3648bb19b5c3735452fee16c835afc43}{A\-D\-C\-\_\-\-C\-H4}~0x60
+\item 
+\#define \hyperlink{_s_o_d_a_8h_ab4912dd56c26f82eb2f8c6e1f9100cef}{A\-D\-C\-\_\-\-C\-O\-N\-T\-R\-O\-L}~0x00
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a1b52f2072afbd743fdd52446aa79d66c}{A\-D\-C\-\_\-\-G\-A\-I\-N1}~0x00
+\item 
+\#define \hyperlink{_s_o_d_a_8h_ad3379317af1d519878ad3482cf683573}{A\-D\-C\-\_\-\-G\-A\-I\-N2}~0x01
+\item 
+\#define \hyperlink{_s_o_d_a_8h_ae2ec8017a25a09268c290a642bd9b933}{A\-D\-C\-\_\-\-G\-A\-I\-N4}~0x02
+\item 
+\#define \hyperlink{_s_o_d_a_8h_af3b1171580b71ded9663cb45e463d378}{A\-D\-C\-\_\-\-G\-A\-I\-N8}~0x03
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a5fd3aabe18504a5314a5d0e71e3bc495}{A\-D\-C\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}~0x6\-E
+\item 
+\#define \hyperlink{_s_o_d_a_8h_aad01f535e631d4f939e8cdf5fab46b3f}{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M1\-\_\-\-A\-D\-D\-R}~0x07
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a5b32a211a54e92457ebf5ebba13302be}{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M\-\_\-\-S\-T\-A\-T\-U\-S}~0x0\-F
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a4fdccb47c51fb69f471233e966876bf6}{C\-L\-O\-C\-K\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-A\-D\-D\-R}~0x0\-E
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a3b1e1dd836f5aba79285b5eeafc2646b}{C\-L\-O\-C\-K\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}~0x68
+\item 
+\#define \hyperlink{_s_o_d_a_8h_aee2245fb4caf68f0fc571d8b24ff5626}{C\-L\-O\-C\-K\-\_\-\-S\-E\-T\-U\-P}~0x5
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a9a34706a5bd72f4ceb62ac812b535c90}{C\-L\-O\-C\-K\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E\-\_\-\-A\-D\-D\-R}~0x11
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a7cc8eff3a86c4756ef854cf944a5dd5e}{C\-L\-O\-C\-K\-\_\-\-T\-I\-M\-E\-\_\-\-C\-A\-L\-\_\-\-A\-D\-D\-R}~0x00
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a8de29f7c8bbf1a81cc6e71ac602032d3}{F\-I\-L\-E\-N\-A\-M\-E}~\char`\"{}D\-A\-T\-A.\-C\-S\-V\char`\"{}
+\item 
+\#define \hyperlink{_s_o_d_a_8h_a2b3671e090b0831bfba7d12cfcf2d481}{L\-E\-D\-P\-I\-N}~13
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_s_o_d_a_8h_a9d2226f7e9458be9bba7d1f1a835ad27}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-12\-B\-I\-T\-S@{A\-D\-C\-\_\-12\-B\-I\-T\-S}}
+\index{A\-D\-C\-\_\-12\-B\-I\-T\-S@{A\-D\-C\-\_\-12\-B\-I\-T\-S}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-12\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-12\-B\-I\-T\-S~0x00}}\label{_s_o_d_a_8h_a9d2226f7e9458be9bba7d1f1a835ad27}
+\hypertarget{_s_o_d_a_8h_ace4f2485b30601e649bc200a7409c279}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-14\-B\-I\-T\-S@{A\-D\-C\-\_\-14\-B\-I\-T\-S}}
+\index{A\-D\-C\-\_\-14\-B\-I\-T\-S@{A\-D\-C\-\_\-14\-B\-I\-T\-S}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-14\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-14\-B\-I\-T\-S~0x04}}\label{_s_o_d_a_8h_ace4f2485b30601e649bc200a7409c279}
+\hypertarget{_s_o_d_a_8h_a65b5afbf078fe48183764d3426f22031}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-16\-B\-I\-T\-S@{A\-D\-C\-\_\-16\-B\-I\-T\-S}}
+\index{A\-D\-C\-\_\-16\-B\-I\-T\-S@{A\-D\-C\-\_\-16\-B\-I\-T\-S}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-16\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-16\-B\-I\-T\-S~0x08}}\label{_s_o_d_a_8h_a65b5afbf078fe48183764d3426f22031}
+\hypertarget{_s_o_d_a_8h_a6d9b75963c39815fce95a22afd8feb37}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-18\-B\-I\-T\-S@{A\-D\-C\-\_\-18\-B\-I\-T\-S}}
+\index{A\-D\-C\-\_\-18\-B\-I\-T\-S@{A\-D\-C\-\_\-18\-B\-I\-T\-S}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-18\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-18\-B\-I\-T\-S~0x0\-C}}\label{_s_o_d_a_8h_a6d9b75963c39815fce95a22afd8feb37}
+\hypertarget{_s_o_d_a_8h_ad06cb9e5985bd216a376f26f22303cd6}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-B\-A\-S\-E@{A\-D\-C\-\_\-\-B\-A\-S\-E}}
+\index{A\-D\-C\-\_\-\-B\-A\-S\-E@{A\-D\-C\-\_\-\-B\-A\-S\-E}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-B\-A\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-B\-A\-S\-E~0x80}}\label{_s_o_d_a_8h_ad06cb9e5985bd216a376f26f22303cd6}
+\hypertarget{_s_o_d_a_8h_a7d351ed34ca3ff55d1681ee84a243090}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-C\-H1@{A\-D\-C\-\_\-\-C\-H1}}
+\index{A\-D\-C\-\_\-\-C\-H1@{A\-D\-C\-\_\-\-C\-H1}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-C\-H1}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-C\-H1~0x00}}\label{_s_o_d_a_8h_a7d351ed34ca3ff55d1681ee84a243090}
+\hypertarget{_s_o_d_a_8h_a2bb0c1b2de3aa355244417d9a42a8966}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-C\-H2@{A\-D\-C\-\_\-\-C\-H2}}
+\index{A\-D\-C\-\_\-\-C\-H2@{A\-D\-C\-\_\-\-C\-H2}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-C\-H2}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-C\-H2~0x20}}\label{_s_o_d_a_8h_a2bb0c1b2de3aa355244417d9a42a8966}
+\hypertarget{_s_o_d_a_8h_a6ae98bab335f9d073a58d70e7ba4f844}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-C\-H3@{A\-D\-C\-\_\-\-C\-H3}}
+\index{A\-D\-C\-\_\-\-C\-H3@{A\-D\-C\-\_\-\-C\-H3}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-C\-H3}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-C\-H3~0x40}}\label{_s_o_d_a_8h_a6ae98bab335f9d073a58d70e7ba4f844}
+\hypertarget{_s_o_d_a_8h_a3648bb19b5c3735452fee16c835afc43}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-C\-H4@{A\-D\-C\-\_\-\-C\-H4}}
+\index{A\-D\-C\-\_\-\-C\-H4@{A\-D\-C\-\_\-\-C\-H4}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-C\-H4}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-C\-H4~0x60}}\label{_s_o_d_a_8h_a3648bb19b5c3735452fee16c835afc43}
+\hypertarget{_s_o_d_a_8h_ab4912dd56c26f82eb2f8c6e1f9100cef}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-C\-O\-N\-T\-R\-O\-L@{A\-D\-C\-\_\-\-C\-O\-N\-T\-R\-O\-L}}
+\index{A\-D\-C\-\_\-\-C\-O\-N\-T\-R\-O\-L@{A\-D\-C\-\_\-\-C\-O\-N\-T\-R\-O\-L}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-C\-O\-N\-T\-R\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-C\-O\-N\-T\-R\-O\-L~0x00}}\label{_s_o_d_a_8h_ab4912dd56c26f82eb2f8c6e1f9100cef}
+\hypertarget{_s_o_d_a_8h_a1b52f2072afbd743fdd52446aa79d66c}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-G\-A\-I\-N1@{A\-D\-C\-\_\-\-G\-A\-I\-N1}}
+\index{A\-D\-C\-\_\-\-G\-A\-I\-N1@{A\-D\-C\-\_\-\-G\-A\-I\-N1}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-G\-A\-I\-N1}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-G\-A\-I\-N1~0x00}}\label{_s_o_d_a_8h_a1b52f2072afbd743fdd52446aa79d66c}
+\hypertarget{_s_o_d_a_8h_ad3379317af1d519878ad3482cf683573}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-G\-A\-I\-N2@{A\-D\-C\-\_\-\-G\-A\-I\-N2}}
+\index{A\-D\-C\-\_\-\-G\-A\-I\-N2@{A\-D\-C\-\_\-\-G\-A\-I\-N2}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-G\-A\-I\-N2}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-G\-A\-I\-N2~0x01}}\label{_s_o_d_a_8h_ad3379317af1d519878ad3482cf683573}
+\hypertarget{_s_o_d_a_8h_ae2ec8017a25a09268c290a642bd9b933}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-G\-A\-I\-N4@{A\-D\-C\-\_\-\-G\-A\-I\-N4}}
+\index{A\-D\-C\-\_\-\-G\-A\-I\-N4@{A\-D\-C\-\_\-\-G\-A\-I\-N4}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-G\-A\-I\-N4}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-G\-A\-I\-N4~0x02}}\label{_s_o_d_a_8h_ae2ec8017a25a09268c290a642bd9b933}
+\hypertarget{_s_o_d_a_8h_af3b1171580b71ded9663cb45e463d378}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-G\-A\-I\-N8@{A\-D\-C\-\_\-\-G\-A\-I\-N8}}
+\index{A\-D\-C\-\_\-\-G\-A\-I\-N8@{A\-D\-C\-\_\-\-G\-A\-I\-N8}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-G\-A\-I\-N8}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-G\-A\-I\-N8~0x03}}\label{_s_o_d_a_8h_af3b1171580b71ded9663cb45e463d378}
+\hypertarget{_s_o_d_a_8h_a5fd3aabe18504a5314a5d0e71e3bc495}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!A\-D\-C\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R@{A\-D\-C\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}}
+\index{A\-D\-C\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R@{A\-D\-C\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{A\-D\-C\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-D\-C\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R~0x6\-E}}\label{_s_o_d_a_8h_a5fd3aabe18504a5314a5d0e71e3bc495}
+\hypertarget{_s_o_d_a_8h_aad01f535e631d4f939e8cdf5fab46b3f}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M1\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M1\-\_\-\-A\-D\-D\-R}}
+\index{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M1\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M1\-\_\-\-A\-D\-D\-R}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M1\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M1\-\_\-\-A\-D\-D\-R~0x07}}\label{_s_o_d_a_8h_aad01f535e631d4f939e8cdf5fab46b3f}
+\hypertarget{_s_o_d_a_8h_a5b32a211a54e92457ebf5ebba13302be}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M\-\_\-\-S\-T\-A\-T\-U\-S@{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M\-\_\-\-S\-T\-A\-T\-U\-S}}
+\index{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M\-\_\-\-S\-T\-A\-T\-U\-S@{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M\-\_\-\-S\-T\-A\-T\-U\-S}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M\-\_\-\-S\-T\-A\-T\-U\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-L\-O\-C\-K\-\_\-\-A\-L\-A\-R\-M\-\_\-\-S\-T\-A\-T\-U\-S~0x0\-F}}\label{_s_o_d_a_8h_a5b32a211a54e92457ebf5ebba13302be}
+\hypertarget{_s_o_d_a_8h_a4fdccb47c51fb69f471233e966876bf6}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!C\-L\-O\-C\-K\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-A\-D\-D\-R}}
+\index{C\-L\-O\-C\-K\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-A\-D\-D\-R}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{C\-L\-O\-C\-K\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-L\-O\-C\-K\-\_\-\-C\-O\-N\-T\-R\-O\-L\-\_\-\-A\-D\-D\-R~0x0\-E}}\label{_s_o_d_a_8h_a4fdccb47c51fb69f471233e966876bf6}
+\hypertarget{_s_o_d_a_8h_a3b1e1dd836f5aba79285b5eeafc2646b}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!C\-L\-O\-C\-K\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}}
+\index{C\-L\-O\-C\-K\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{C\-L\-O\-C\-K\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-L\-O\-C\-K\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R~0x68}}\label{_s_o_d_a_8h_a3b1e1dd836f5aba79285b5eeafc2646b}
+\hypertarget{_s_o_d_a_8h_aee2245fb4caf68f0fc571d8b24ff5626}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!C\-L\-O\-C\-K\-\_\-\-S\-E\-T\-U\-P@{C\-L\-O\-C\-K\-\_\-\-S\-E\-T\-U\-P}}
+\index{C\-L\-O\-C\-K\-\_\-\-S\-E\-T\-U\-P@{C\-L\-O\-C\-K\-\_\-\-S\-E\-T\-U\-P}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{C\-L\-O\-C\-K\-\_\-\-S\-E\-T\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-L\-O\-C\-K\-\_\-\-S\-E\-T\-U\-P~0x5}}\label{_s_o_d_a_8h_aee2245fb4caf68f0fc571d8b24ff5626}
+\hypertarget{_s_o_d_a_8h_a9a34706a5bd72f4ceb62ac812b535c90}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!C\-L\-O\-C\-K\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E\-\_\-\-A\-D\-D\-R}}
+\index{C\-L\-O\-C\-K\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E\-\_\-\-A\-D\-D\-R}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{C\-L\-O\-C\-K\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-L\-O\-C\-K\-\_\-\-T\-E\-M\-P\-E\-R\-A\-T\-U\-R\-E\-\_\-\-A\-D\-D\-R~0x11}}\label{_s_o_d_a_8h_a9a34706a5bd72f4ceb62ac812b535c90}
+\hypertarget{_s_o_d_a_8h_a7cc8eff3a86c4756ef854cf944a5dd5e}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!C\-L\-O\-C\-K\-\_\-\-T\-I\-M\-E\-\_\-\-C\-A\-L\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-T\-I\-M\-E\-\_\-\-C\-A\-L\-\_\-\-A\-D\-D\-R}}
+\index{C\-L\-O\-C\-K\-\_\-\-T\-I\-M\-E\-\_\-\-C\-A\-L\-\_\-\-A\-D\-D\-R@{C\-L\-O\-C\-K\-\_\-\-T\-I\-M\-E\-\_\-\-C\-A\-L\-\_\-\-A\-D\-D\-R}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{C\-L\-O\-C\-K\-\_\-\-T\-I\-M\-E\-\_\-\-C\-A\-L\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-L\-O\-C\-K\-\_\-\-T\-I\-M\-E\-\_\-\-C\-A\-L\-\_\-\-A\-D\-D\-R~0x00}}\label{_s_o_d_a_8h_a7cc8eff3a86c4756ef854cf944a5dd5e}
+\hypertarget{_s_o_d_a_8h_a8de29f7c8bbf1a81cc6e71ac602032d3}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!F\-I\-L\-E\-N\-A\-M\-E@{F\-I\-L\-E\-N\-A\-M\-E}}
+\index{F\-I\-L\-E\-N\-A\-M\-E@{F\-I\-L\-E\-N\-A\-M\-E}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{F\-I\-L\-E\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-L\-E\-N\-A\-M\-E~\char`\"{}D\-A\-T\-A.\-C\-S\-V\char`\"{}}}\label{_s_o_d_a_8h_a8de29f7c8bbf1a81cc6e71ac602032d3}
+\hypertarget{_s_o_d_a_8h_a2b3671e090b0831bfba7d12cfcf2d481}{\index{S\-O\-D\-A.\-h@{S\-O\-D\-A.\-h}!L\-E\-D\-P\-I\-N@{L\-E\-D\-P\-I\-N}}
+\index{L\-E\-D\-P\-I\-N@{L\-E\-D\-P\-I\-N}!SODA.h@{S\-O\-D\-A.\-h}}
+\subsubsection[{L\-E\-D\-P\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-E\-D\-P\-I\-N~13}}\label{_s_o_d_a_8h_a2b3671e090b0831bfba7d12cfcf2d481}

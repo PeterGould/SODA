@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>The SODA library for datalogging with Olympia Circuit&apos;s SODA HE board.</title>
+    <detaileddescription>
+<sect1 id="index_1intro_sec">
+<title>Introduction</title>
+<para><ref refid="class_s_o_d_a" kindref="compound">SODA</ref> is an Arduino library for data logging. It provides functions to simplify datalogging tasks using Olympia Circuit&apos;s <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> HE 1.0 board. <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> stands for Simple Open Data Acquisition. The goal of the project is to provide simple, high quality tools for the collection and analysis of environmental data. The library was built by Peter Gould (<ulink url="mailto:peter@olympiacircuits.com">peter@olympiacircuits.com</ulink>). Some code was adapted from Petre Rodan&apos;s DS3231 library for Arduino. Additional thanks go to William Greiman for his SD_FAT library.</para><para>The <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> library consists of a single class <ref refid="class_s_o_d_a" kindref="compound">SODA</ref>. </para></sect1>
+<sect1 id="index_1dependencies_sec">
+<title>Dependencies</title>
+<para>SdFat: library for SD card functions. This library needs to be added to your Arduino library along with <ref refid="class_s_o_d_a" kindref="compound">SODA</ref>.</para><para>EEPROM: standard Arduino library for EEPROM functions (comes with your Arduino installation).</para><para>Wire: standard Arduino library for I2C communication (comes with your Arduino installation). </para></sect1>
+<sect1 id="index_1install_sec">
+<title>Installation</title>
+<para>The contents of the <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> folder should be added to the library folder of your Arduino installation (e.g., C:\Program Files (x86)\Arduino\libraries). Arduino must be restarted after the library has been added. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

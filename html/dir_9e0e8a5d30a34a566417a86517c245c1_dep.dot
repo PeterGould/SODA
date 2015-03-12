@@ -1,0 +1,9 @@
+digraph "C:/Users/Peter/Documents/Arduino/libraries/SODA" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0bb2a7a5b945607597fc132fc6bc1944 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="libraries" fontname="Helvetica", fontsize="10", URL="dir_0bb2a7a5b945607597fc132fc6bc1944.html"]
+  dir_9e0e8a5d30a34a566417a86517c245c1 [shape=box, label="SODA", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9e0e8a5d30a34a566417a86517c245c1.html"];
+  }
+}

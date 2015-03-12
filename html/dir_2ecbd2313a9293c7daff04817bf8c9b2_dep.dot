@@ -1,0 +1,13 @@
+digraph "C:/Users/Peter/Documents/Arduino" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_998ae08a057ec2f0e7b36da23343e438 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Documents" fontname="Helvetica", fontsize="10", URL="dir_998ae08a057ec2f0e7b36da23343e438.html"]
+  subgraph clusterdir_2ecbd2313a9293c7daff04817bf8c9b2 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2ecbd2313a9293c7daff04817bf8c9b2.html"];
+    dir_2ecbd2313a9293c7daff04817bf8c9b2 [shape=plaintext label="Arduino"];
+    dir_0bb2a7a5b945607597fc132fc6bc1944 [shape=box label="libraries" color="red" fillcolor="white" style="filled" URL="dir_0bb2a7a5b945607597fc132fc6bc1944.html"];
+  }
+  }
+}
