@@ -32,16 +32,16 @@
 		\hyperpage{16}
   \item {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N1}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}h}, 
-		\hyperpage{16}
+		\hyperpage{17}
   \item {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N2}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}h}, 
-		\hyperpage{16}
+		\hyperpage{17}
   \item {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N4}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}h}, 
-		\hyperpage{16}
+		\hyperpage{17}
   \item {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N8}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}h}, 
-		\hyperpage{16}
+		\hyperpage{17}
   \item {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}I2\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}D\discretionary {-}{}{}R}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}h}, 
 		\hyperpage{17}
@@ -53,10 +53,10 @@
 
   \item {begin}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{9}
+		\hyperpage{8}
   \item {blinks}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{9}
+		\hyperpage{8}
   \item {buffer}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}cpp}, 
 		\hyperpage{15}
@@ -65,7 +65,7 @@
 		\hyperpage{15}
   \item {buffer\discretionary {-}{}{}Time}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{9}
+		\hyperpage{8}
 
   \indexspace
 
@@ -93,25 +93,34 @@
 		\hyperpage{15}
   \item {check\discretionary {-}{}{}Time}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{9}
+		\hyperpage{8}
   \item {communicate}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{9}
+		\hyperpage{8}
 
   \indexspace
 
   \item {data\discretionary {-}{}{}Download}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{10}
+		\hyperpage{9}
   \item {data\discretionary {-}{}{}Line\discretionary {-}{}{}Add}
+    \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
+		\hyperpage{9}
+  \item {data\discretionary {-}{}{}Line\discretionary {-}{}{}Add\discretionary {-}{}{}Bytes}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
 		\hyperpage{10}
   \item {data\discretionary {-}{}{}Line\discretionary {-}{}{}Begin}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{11}
+		\hyperpage{10}
   \item {data\discretionary {-}{}{}Line\discretionary {-}{}{}End}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{11}
+		\hyperpage{10}
+
+  \indexspace
+
+  \item {end\discretionary {-}{}{}\_\discretionary {-}{}{}on\discretionary {-}{}{}\_\discretionary {-}{}{}connect}
+    \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}cpp}, 
+		\hyperpage{15}
 
   \indexspace
 
@@ -126,7 +135,7 @@
 
   \item {get\discretionary {-}{}{}Clock\discretionary {-}{}{}Temp}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{11}
+		\hyperpage{10}
   \item {get\discretionary {-}{}{}I\discretionary {-}{}{}D}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
 		\hyperpage{11}
@@ -135,7 +144,7 @@
 		\hyperpage{11}
   \item {get\discretionary {-}{}{}Time}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{12}
+		\hyperpage{11}
 
   \indexspace
 
@@ -147,49 +156,57 @@
 
   \item {print\discretionary {-}{}{}Buffer}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{12}
+		\hyperpage{11}
 
   \indexspace
 
   \item {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
 		\hyperpage{7}
     \subitem {adc\discretionary {-}{}{}Read}, \hyperpage{8}
-    \subitem {begin}, \hyperpage{9}
-    \subitem {blinks}, \hyperpage{9}
-    \subitem {buffer\discretionary {-}{}{}Time}, \hyperpage{9}
-    \subitem {check\discretionary {-}{}{}Time}, \hyperpage{9}
-    \subitem {communicate}, \hyperpage{9}
-    \subitem {data\discretionary {-}{}{}Download}, \hyperpage{10}
+    \subitem {begin}, \hyperpage{8}
+    \subitem {blinks}, \hyperpage{8}
+    \subitem {buffer\discretionary {-}{}{}Time}, \hyperpage{8}
+    \subitem {check\discretionary {-}{}{}Time}, \hyperpage{8}
+    \subitem {communicate}, \hyperpage{8}
+    \subitem {data\discretionary {-}{}{}Download}, \hyperpage{9}
     \subitem {data\discretionary {-}{}{}Line\discretionary {-}{}{}Add}, 
+		\hyperpage{9}
+    \subitem {data\discretionary {-}{}{}Line\discretionary {-}{}{}Add\discretionary {-}{}{}Bytes}, 
 		\hyperpage{10}
     \subitem {data\discretionary {-}{}{}Line\discretionary {-}{}{}Begin}, 
-		\hyperpage{11}
+		\hyperpage{10}
     \subitem {data\discretionary {-}{}{}Line\discretionary {-}{}{}End}, 
-		\hyperpage{11}
+		\hyperpage{10}
     \subitem {get\discretionary {-}{}{}Clock\discretionary {-}{}{}Temp}, 
-		\hyperpage{11}
+		\hyperpage{10}
     \subitem {get\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
 		\hyperpage{11}
     \subitem {get\discretionary {-}{}{}Standby}, \hyperpage{11}
-    \subitem {get\discretionary {-}{}{}Time}, \hyperpage{12}
-    \subitem {print\discretionary {-}{}{}Buffer}, \hyperpage{12}
+    \subitem {get\discretionary {-}{}{}Time}, \hyperpage{11}
+    \subitem {print\discretionary {-}{}{}Buffer}, \hyperpage{11}
     \subitem {serial\discretionary {-}{}{}Set\discretionary {-}{}{}Time}, 
-		\hyperpage{12}
+		\hyperpage{11}
     \subitem {set\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
-		\hyperpage{12}
+		\hyperpage{11}
     \subitem {set\discretionary {-}{}{}Standby}, \hyperpage{12}
     \subitem {set\discretionary {-}{}{}Time}, \hyperpage{12}
-    \subitem {set\discretionary {-}{}{}Wake}, \hyperpage{13}
+    \subitem {set\discretionary {-}{}{}Wake}, \hyperpage{12}
     \subitem {smooth\discretionary {-}{}{}Analog\discretionary {-}{}{}Read}, 
-		\hyperpage{13}
+		\hyperpage{12}
+    \subitem {tc\discretionary {-}{}{}Read\discretionary {-}{}{}K}, 
+		\hyperpage{12}
     \subitem {turn\discretionary {-}{}{}Off}, \hyperpage{13}
     \subitem {update\discretionary {-}{}{}Time}, \hyperpage{13}
-    \subitem {usb\discretionary {-}{}{}Connected}, \hyperpage{14}
+    \subitem {usb\discretionary {-}{}{}Connected}, \hyperpage{13}
   \item {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}cpp}
     \subitem {buffer}, \hyperpage{15}
     \subitem {buffer\discretionary {-}{}{}Index}, \hyperpage{15}
     \subitem {card}, \hyperpage{15}
+    \subitem {end\discretionary {-}{}{}\_\discretionary {-}{}{}on\discretionary {-}{}{}\_\discretionary {-}{}{}connect}, 
+		\hyperpage{15}
     \subitem {file}, \hyperpage{15}
+    \subitem {single\discretionary {-}{}{}\_\discretionary {-}{}{}file}, 
+		\hyperpage{15}
     \subitem {time\discretionary {-}{}{}Array}, \hyperpage{15}
   \item {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}h}
     \subitem {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}12\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}S}, 
@@ -213,13 +230,13 @@
     \subitem {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}L}, 
 		\hyperpage{16}
     \subitem {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N1}, 
-		\hyperpage{16}
+		\hyperpage{17}
     \subitem {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N2}, 
-		\hyperpage{16}
+		\hyperpage{17}
     \subitem {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N4}, 
-		\hyperpage{16}
+		\hyperpage{17}
     \subitem {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}A\discretionary {-}{}{}I\discretionary {-}{}{}N8}, 
-		\hyperpage{16}
+		\hyperpage{17}
     \subitem {A\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}I2\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}D\discretionary {-}{}{}R}, 
 		\hyperpage{17}
     \subitem {C\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}M1\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}D\discretionary {-}{}{}R}, 
@@ -234,10 +251,10 @@
 		\hyperpage{17}
   \item {serial\discretionary {-}{}{}Set\discretionary {-}{}{}Time}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{12}
+		\hyperpage{11}
   \item {set\discretionary {-}{}{}I\discretionary {-}{}{}D}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{12}
+		\hyperpage{11}
   \item {set\discretionary {-}{}{}Standby}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
 		\hyperpage{12}
@@ -246,13 +263,19 @@
 		\hyperpage{12}
   \item {set\discretionary {-}{}{}Wake}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{13}
+		\hyperpage{12}
+  \item {single\discretionary {-}{}{}\_\discretionary {-}{}{}file}
+    \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}cpp}, 
+		\hyperpage{15}
   \item {smooth\discretionary {-}{}{}Analog\discretionary {-}{}{}Read}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{13}
+		\hyperpage{12}
 
   \indexspace
 
+  \item {tc\discretionary {-}{}{}Read\discretionary {-}{}{}K}
+    \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
+		\hyperpage{12}
   \item {time\discretionary {-}{}{}Array}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A.\discretionary {-}{}{}cpp}, 
 		\hyperpage{15}
@@ -267,6 +290,6 @@
 		\hyperpage{13}
   \item {usb\discretionary {-}{}{}Connected}
     \subitem {S\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}A}, 
-		\hyperpage{14}
+		\hyperpage{13}
 
 \end{theindex}

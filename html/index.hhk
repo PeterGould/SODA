@@ -37,8 +37,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a15a8c710209fd041f14bb448fd17c9b2"><param name="Name" value="communicate"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a6a65882362bba508fbc8c0d5e45badc1"><param name="Name" value="dataDownload"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a00647a29fb7b491d5e455b8b099da5e0"><param name="Name" value="dataLineAdd"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a8cd44297bace9494ed073fec5ebfe13a"><param name="Name" value="dataLineBegin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#ae41f4913152b2a84fadc563f9beb1de5"><param name="Name" value="dataLineAddBytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a8fe9975e114931740d379a3385f0ea3d"><param name="Name" value="dataLineBegin"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a3bdf9101301e2781fe899cb52a59820b"><param name="Name" value="dataLineEnd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#a0ab9180c7b434b57d6632666e9365cbf"><param name="Name" value="end_on_connect"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#a31c2191bba86f51dee529f998dd5e764"><param name="Name" value="file"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8h.html#a8de29f7c8bbf1a81cc6e71ac602032d3"><param name="Name" value="FILENAME"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#abce8c3a638c71d842ab79af3120138c5"><param name="Name" value="getClockTemp"></OBJECT>
@@ -52,6 +54,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#aa78eec946be2a371ae844fa44f6e4d96"><param name="Name" value="setStandby"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a69b626b4dfd0847a1d9452ce8faba28e"><param name="Name" value="setTime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a6acf21ab1e6db2b8861715e8a5a7f37f"><param name="Name" value="setWake"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#ae35af5e35f9e2128441bdc62cf01c5fa"><param name="Name" value="single_file"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a55eaa23fbeb729b6d348a0d6c4e3c9b3"><param name="Name" value="smoothAnalogRead"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html"><param name="Name" value="SODA"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html"><param name="Name" value="SODA.cpp"></OBJECT>
@@ -59,7 +62,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#abb3fb3c13325b6f5206e79234aea8772"><param name="Name" value="buffer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#a73b963945a418c57630c1b66ce2aa74f"><param name="Name" value="bufferIndex"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#ad45b8d02a7d624c8b45e91dea0b6bac7"><param name="Name" value="card"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#a0ab9180c7b434b57d6632666e9365cbf"><param name="Name" value="end_on_connect"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#a31c2191bba86f51dee529f998dd5e764"><param name="Name" value="file"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#ae35af5e35f9e2128441bdc62cf01c5fa"><param name="Name" value="single_file"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#a194d3c4897cfa3ad9d8975be785d1b8f"><param name="Name" value="timeArray"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8h.html"><param name="Name" value="SODA.h"></OBJECT>
@@ -99,7 +104,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a15a8c710209fd041f14bb448fd17c9b2"><param name="Name" value="communicate"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a6a65882362bba508fbc8c0d5e45badc1"><param name="Name" value="dataDownload"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a00647a29fb7b491d5e455b8b099da5e0"><param name="Name" value="dataLineAdd"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a8cd44297bace9494ed073fec5ebfe13a"><param name="Name" value="dataLineBegin"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#ae41f4913152b2a84fadc563f9beb1de5"><param name="Name" value="dataLineAddBytes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a8fe9975e114931740d379a3385f0ea3d"><param name="Name" value="dataLineBegin"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a3bdf9101301e2781fe899cb52a59820b"><param name="Name" value="dataLineEnd"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#abce8c3a638c71d842ab79af3120138c5"><param name="Name" value="getClockTemp"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a01ecfd6c2f14d0f5507a4384b34fb46a"><param name="Name" value="getID"></OBJECT>
@@ -112,10 +118,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a69b626b4dfd0847a1d9452ce8faba28e"><param name="Name" value="setTime"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a6acf21ab1e6db2b8861715e8a5a7f37f"><param name="Name" value="setWake"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a55eaa23fbeb729b6d348a0d6c4e3c9b3"><param name="Name" value="smoothAnalogRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a1f1aa095370775ed2d94ca6d842ff213"><param name="Name" value="tcReadK"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#aeb776ca678f15e50781f031cb3f880d6"><param name="Name" value="tcReadT"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a135382c3d907496f74c852965b31ffdd"><param name="Name" value="turnOff"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a17bd73a287665e022f8e955db65618b8"><param name="Name" value="updateTime"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a5ef9772aba25fe5b19bc0d647d8c899a"><param name="Name" value="usbConnected"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a1f1aa095370775ed2d94ca6d842ff213"><param name="Name" value="tcReadK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#aeb776ca678f15e50781f031cb3f880d6"><param name="Name" value="tcReadT"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_o_d_a_8cpp.html#a194d3c4897cfa3ad9d8975be785d1b8f"><param name="Name" value="timeArray"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a135382c3d907496f74c852965b31ffdd"><param name="Name" value="turnOff"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_s_o_d_a.html#a17bd73a287665e022f8e955db65618b8"><param name="Name" value="updateTime"></OBJECT>

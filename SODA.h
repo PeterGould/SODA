@@ -170,6 +170,12 @@ class SODA
 		*@return a int value of temperature in degrees C. Int is used instead of a float since the precision of the measurement cannot realistically support decimal numbers.
 		*/
 		int tcReadK(int ch);
+			/**
+		*Returns a temperature reading from a type T themocouple.
+		*@param ch an int argument specifying ADC channel 1,2,3, or 4
+		*@return a float value of temperature in degrees C. 
+		*/
+		float tcReadT(int ch);
 		/**
 		*An improved version of analogRead that reduces noise in the measurement
 		*@param pin1 pin number to make reading
@@ -186,17 +192,14 @@ class SODA
 		*@param binary a boolean indicating whether to write file in binary mode
 		*@param set_end_on_connect a boolean indicating whether the file should be closed when a USB connection is detected
 		*@param set_single_file a boolean indicating whether to save data to a single file or to create a new file each time.
-		*@param
 		*@param sd_cs_pin an int value for the chip-select pin for the SD card. Pin 17 is the default for the normal build.
-	   
-		*@param 
 		*@see dataLineAdd()
 		*@see dataLineEnd()
 		*@see getID()
 		*@see getTime()
 		*@see setID()
 		*/
-		void dataLineBegin(boolean binary = false, boolean set_end_on_connect = false, boolean set_single_file = true, int sd_cs_pin = 17);
+		void dataLineBegin(boolean binary = false, boolean set_end_on_connect = true, boolean set_single_file = true, int sd_cs_pin = 17);
 		/**
 		*Adds an int value to the current data line. A comma is placed before the value.
 		*param value an int value

@@ -15,98 +15,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="72" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="74" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="class_s_o_d_a_1af8706c3bd9847ccfc679bd403b21f91e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int SODA::bcdtodec</definition>
-        <argsstring>(int val)</argsstring>
-        <name>bcdtodec</name>
-        <param>
-          <type>int</type>
-          <declname>val</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="69" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="53" bodyend="56"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a8a097eefc2f44317c8f1eb0ba81ef088" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int SODA::dectobcd</definition>
-        <argsstring>(int val)</argsstring>
-        <name>dectobcd</name>
-        <param>
-          <type>int</type>
-          <declname>val</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="68" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="48" bodyend="51"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a03d84d407029febb5d01d1cee1592a92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>unsigned char</type>
-        <definition>unsigned char SODA::getAddress</definition>
-        <argsstring>(uint8_t, uint8_t)</argsstring>
-        <name>getAddress</name>
-        <param>
-          <type>uint8_t</type>
-          <defname>device</defname>
-        </param>
-        <param>
-          <type>uint8_t</type>
-          <defname>addr</defname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="67" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="36" bodyend="45"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1aa5d41737ea0ccc85664ee30b9461113c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::parseCommand</definition>
-        <argsstring>(char)</argsstring>
-        <name>parseCommand</name>
-        <param>
-          <type>char</type>
-          <defname>command</defname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="71" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="506" bodyend="527"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1abde23434d6707bcd97e66642a7d2f43d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::runSD</definition>
-        <argsstring>(int)</argsstring>
-        <name>runSD</name>
-        <param>
-          <type>int</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="70" column="1"/>
-      </memberdef>
       <memberdef kind="function" id="class_s_o_d_a_1a1d5cb0c5316f2c25339de6c3c82952f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SODA::setAddress</definition>
@@ -130,10 +42,375 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="66" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="27" bodyend="33"/>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="66" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a03d84d407029febb5d01d1cee1592a92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char SODA::getAddress</definition>
+        <argsstring>(uint8_t, uint8_t)</argsstring>
+        <name>getAddress</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>device</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>addr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="67" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="38" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a8a097eefc2f44317c8f1eb0ba81ef088" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SODA::dectobcd</definition>
+        <argsstring>(int val)</argsstring>
+        <name>dectobcd</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="68" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1af8706c3bd9847ccfc679bd403b21f91e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SODA::bcdtodec</definition>
+        <argsstring>(int val)</argsstring>
+        <name>bcdtodec</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="69" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1abde23434d6707bcd97e66642a7d2f43d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::runSD</definition>
+        <argsstring>(int)</argsstring>
+        <name>runSD</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1aa5d41737ea0ccc85664ee30b9461113c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::parseCommand</definition>
+        <argsstring>(char)</argsstring>
+        <name>parseCommand</name>
+        <param>
+          <type>char</type>
+          <defname>command</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="71" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="621" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a1c3a46ae184ec5c576463398e398d65c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::testForConnection</definition>
+        <argsstring>()</argsstring>
+        <name>testForConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="72" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="574" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a729d195ccf0c345c4acb299b878fcb8e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::incrementName</definition>
+        <argsstring>(char *inChar, int newVal, int nameLength=4)</argsstring>
+        <name>incrementName</name>
+        <param>
+          <type>char *</type>
+          <declname>inChar</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newVal</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nameLength</declname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="73" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="483" bodyend="490"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_d_a_1a95ec5e2456f6402478c101dad0b735ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes an instance of the <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> class. Should be called in each sketch before any other <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> functions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="82" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::updateTime</definition>
+        <argsstring>(int val, int place)</argsstring>
+        <name>updateTime</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>place</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the time array. Need to run setTime to send time array to clock. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int time values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>place</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para><simplesectsep/><para>getTIme() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="92" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a9cca81f7fda16982cc1eb4030774425b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SODA::checkTime</definition>
+        <argsstring>(int place)</argsstring>
+        <name>checkTime</name>
+        <param>
+          <type>int</type>
+          <declname>place</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an int value from the timeArray. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>place</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" kindref="member">updateTime()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="99" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::setTime</definition>
+        <argsstring>()</argsstring>
+        <name>setTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets the time in the clock to the values from timeArray. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a9cca81f7fda16982cc1eb4030774425b" kindref="member">checkTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" kindref="member">updateTime()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="106" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="70" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::getTime</definition>
+        <argsstring>()</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads the time from the clock to the timeArray. (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="112" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="100" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a93c1adcc876e1681db69d992153ffb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::bufferTime</definition>
+        <argsstring>()</argsstring>
+        <name>bufferTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads the timeArray into a formatted character buffer. Format = YYYY-MM-DD HH:MM:SS <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="118" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="133" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1abac684bb54a9d346337b6e0ed9243e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::serialSetTime</definition>
+        <argsstring>()</argsstring>
+        <name>serialSetTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the clock based on input from the Serial connection. Serial data are first saved to the buffer[] array and then loaded to the timeArray before being sent to the clock. Serial data format = &apos;YYYY-MM-DD HH:MM:SS&apos;. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="125" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="160" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1abce8c3a638c71d842ab79af3120138c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SODA::getClockTemp</definition>
+        <argsstring>()</argsstring>
+        <name>getClockTemp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the value from the internal temperature sensor in the DS3231 real time clock. <simplesect kind="return"><para>temperature in Celsius as float </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="130" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="194" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a6acf21ab1e6db2b8861715e8a5a7f37f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::setWake</definition>
+        <argsstring>(int val, int valType)</argsstring>
+        <name>setWake</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the clock alarm. Used to wake up the logger and begin a new measurement. Example: setWake(10,2); sets the alarm to the next 10 minute interval. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int time value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int indicating the units of time 1= secs, 2 = mins, 3=hours. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a135382c3d907496f74c852965b31ffdd" kindref="member">turnOff</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="138" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="214" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a135382c3d907496f74c852965b31ffdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::turnOff</definition>
+        <argsstring>()</argsstring>
+        <name>turnOff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turns of the datalogger board by resetting the clock alarm pin, thereby shuttting off the voltage regulator. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a6acf21ab1e6db2b8861715e8a5a7f37f" kindref="member">setWake()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="143" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="257" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1aa78eec946be2a371ae844fa44f6e4d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::setStandby</definition>
+        <argsstring>(unsigned char val)</argsstring>
+        <name>setStandby</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the standby variable to indicate whether the logger is in logging or communication mode. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unsigned char </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a98719fd95cb6fd3c70f221e62dbf06f4" kindref="member">getStandby</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="149" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="267" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a98719fd95cb6fd3c70f221e62dbf06f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SODA::getStandby</definition>
+        <argsstring>()</argsstring>
+        <name>getStandby</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the standby variable that&apos;s used to indicate whether the logger is in logging or communication mode. <simplesect kind="return"><para>standby as unsigned char </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1aa78eec946be2a371ae844fa44f6e4d96" kindref="member">setStandby</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="155" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="286" bodyend="288"/>
+      </memberdef>
       <memberdef kind="function" id="class_s_o_d_a_1a30b86308dcb295c5e86b79049d3bafdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>long</type>
         <definition>long SODA::adcRead</definition>
@@ -180,423 +457,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="164" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="291" bodyend="332"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a95ec5e2456f6402478c101dad0b735ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::begin</definition>
-        <argsstring>()</argsstring>
-        <name>begin</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Initializes an instance of the <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> class. Should be called in each sketch before any other <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> functions. </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="80" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="16" bodyend="25"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1af1752112fc06931fa9634f48cf65e420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::blinks</definition>
-        <argsstring>(int n)</argsstring>
-        <name>blinks</name>
-        <param>
-          <type>int</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Blinks the led connected to pin 13. Used for simple communications such as to show when a process in under way or finished. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>n</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>an int that sets the number of times to blink. Each blink = 100 ms on, 100 ms off. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="271" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="556" bodyend="565"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a93c1adcc876e1681db69d992153ffb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::bufferTime</definition>
-        <argsstring>()</argsstring>
-        <name>bufferTime</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Loads the timeArray into a formatted character buffer. Format = YYYY-MM-DD HH:MM:SS <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="116" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="131" bodyend="155"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a9cca81f7fda16982cc1eb4030774425b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int SODA::checkTime</definition>
-        <argsstring>(int place)</argsstring>
-        <name>checkTime</name>
-        <param>
-          <type>int</type>
-          <declname>place</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Returns an int value from the timeArray. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>place</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" kindref="member">updateTime()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="97" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="186" bodyend="189"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a15a8c710209fd041f14bb448fd17c9b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::communicate</definition>
-        <argsstring>()</argsstring>
-        <name>communicate</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Handles communication between the <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> and a computer/tablet through the serial monitor. Commands are sent through a serial connection using the format [XMORE_INFO] where X is a one-character command and MORE_INFO are optional, additional characters used to complete some commands such as setting the clock. current commands are: [D] downloads the logger file on the sd card</para><para>[I] return the logger_id</para><para>[R] runs through the sketch and normally ouputs a line of current readings to the serial connection.</para><para>[t] prints the current clock time to the serial connection</para><para>[TYYYY-MM-DD HH:MM:SS] sets the clock time <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-<para>set standby so the clock will be reset properly </para>        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="245" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="473" bodyend="504"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a6a65882362bba508fbc8c0d5e45badc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::dataDownload</definition>
-        <argsstring>()</argsstring>
-        <name>dataDownload</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Reads the contents of the data file from the SD card and streams it through the serial connection. The name of the file is set using #define filename definition at the top of <ref refid="_s_o_d_a_8h" kindref="compound">SODA.h</ref>. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="225" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="454" bodyend="463"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::dataLineAdd</definition>
-        <argsstring>(int value)</argsstring>
-        <name>dataLineAdd</name>
-        <param>
-          <type>int</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Adds an int value to the current data line. A comma is placed before the value. param value an int value <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="197" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="401" bodyend="411"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a1c38451ceb71b3e644eb16c11fcfacd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::dataLineAdd</definition>
-        <argsstring>(long value)</argsstring>
-        <name>dataLineAdd</name>
-        <param>
-          <type>long</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Adds a long value to the current data line. A comma is placed before the value. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>value</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>an int value </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="204" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="414" bodyend="424"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1aa5263a65ba6929e23c85bc0d47bbae32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::dataLineAdd</definition>
-        <argsstring>(float value)</argsstring>
-        <name>dataLineAdd</name>
-        <param>
-          <type>float</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Adds a float value to the current data line. A comma is placed before the value. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>value</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>an int value </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="211" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="427" bodyend="437"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::dataLineBegin</definition>
-        <argsstring>()</argsstring>
-        <name>dataLineBegin</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Begins a new dataline and writes the loggerid and current time separated by a comma. The clock is read by the functions so there&apos;s no need to make a seperate call to <ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref>. The function typically begins writing the line to the SD card. If the USB cable is connected it instead writes to the serial monitor. If writing to the SD card, the file is opened and left open until a call to <ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref>. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a01ecfd6c2f14d0f5507a4384b34fb46a" kindref="member">getID()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1aa79b275be71dbfd5662608add4715b87" kindref="member">setID()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="190" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="384" bodyend="399"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::dataLineEnd</definition>
-        <argsstring>()</argsstring>
-        <name>dataLineEnd</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Terminates a data line. Adds a carriage return/line feed to the end of the data line and, if writing to the SD card, then closes the file. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="217" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="439" bodyend="452"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1abce8c3a638c71d842ab79af3120138c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>float</type>
-        <definition>float SODA::getClockTemp</definition>
-        <argsstring>()</argsstring>
-        <name>getClockTemp</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Returns the value from the internal temperature sensor in the DS3231 real time clock. <simplesect kind="return"><para>temperature in Celsius as float </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="128" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="192" bodyend="210"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a01ecfd6c2f14d0f5507a4384b34fb46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>long</type>
-        <definition>long SODA::getID</definition>
-        <argsstring>()</argsstring>
-        <name>getID</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Returns the logger ID stored in microcontroller&apos;s EEPROM. <simplesect kind="return"><para>ID a long integer. </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="257" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="541" bodyend="548"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a98719fd95cb6fd3c70f221e62dbf06f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int SODA::getStandby</definition>
-        <argsstring>()</argsstring>
-        <name>getStandby</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Retrieves the standby variable that&apos;s used to indicate whether the logger is in logging or communication mode. <simplesect kind="return"><para>standby as unsigned char </para></simplesect>
-<simplesect kind="see"><para><ref refid="class_s_o_d_a_1aa78eec946be2a371ae844fa44f6e4d96" kindref="member">setStandby</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="153" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="280" bodyend="282"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::getTime</definition>
-        <argsstring>()</argsstring>
-        <name>getTime</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Loads the time from the clock to the timeArray. (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="110" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="98" bodyend="127"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1af1e78fa91c8cb363a93320acaacf0e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::printBuffer</definition>
-        <argsstring>()</argsstring>
-        <name>printBuffer</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Prints the contents of the buffer[] array, usually a formatted time stamp. </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="261" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="59" bodyend="61"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1abac684bb54a9d346337b6e0ed9243e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::serialSetTime</definition>
-        <argsstring>()</argsstring>
-        <name>serialSetTime</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Set the clock based on input from the Serial connection. Serial data are first saved to the buffer[] array and then loaded to the timeArray before being sent to the clock. Serial data format = &apos;YYYY-MM-DD HH:MM:SS&apos;. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="123" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="158" bodyend="176"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1aa79b275be71dbfd5662608add4715b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::setID</definition>
-        <argsstring>(long ID)</argsstring>
-        <name>setID</name>
-        <param>
-          <type>long</type>
-          <declname>ID</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Writes an logger ID number as a long value to the microcontroller&apos;s EEPROM (address 0 to 3). <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ID</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>a long value to be used as the logger ID </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="252" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="534" bodyend="539"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1aa78eec946be2a371ae844fa44f6e4d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::setStandby</definition>
-        <argsstring>(unsigned char val)</argsstring>
-        <name>setStandby</name>
-        <param>
-          <type>unsigned char</type>
-          <declname>val</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Sets the standby variable to indicate whether the logger is in logging or communication mode. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>val</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>unsigned char </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a98719fd95cb6fd3c70f221e62dbf06f4" kindref="member">getStandby</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="147" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="261" bodyend="278"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::setTime</definition>
-        <argsstring>()</argsstring>
-        <name>setTime</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Resets the time in the clock to the values from timeArray. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a9cca81f7fda16982cc1eb4030774425b" kindref="member">checkTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" kindref="member">updateTime()</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="104" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="68" bodyend="95"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a6acf21ab1e6db2b8861715e8a5a7f37f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::setWake</definition>
-        <argsstring>(int val, int valType)</argsstring>
-        <name>setWake</name>
-        <param>
-          <type>int</type>
-          <declname>val</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>valType</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Sets the clock alarm. Used to wake up the logger and begin a new measurement. Example: setWake(10,2); sets the alarm to the next 10 minute interval. <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>val</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>an int time value. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>valType</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>an int indicating the units of time 1= secs, 2 = mins, 3=hours. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a135382c3d907496f74c852965b31ffdd" kindref="member">turnOff</ref> </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="136" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="212" bodyend="248"/>
-      </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a55eaa23fbeb729b6d348a0d6c4e3c9b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int SODA::smoothAnalogRead</definition>
-        <argsstring>(int pin1)</argsstring>
-        <name>smoothAnalogRead</name>
-        <param>
-          <type>int</type>
-          <declname>pin1</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>An improved version of analogRead that reduces noise in the measurement <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pin1</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>pin number to make reading </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>an int value of the average reading (between 0 and 1023). </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="176" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="366" bodyend="378"/>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="166" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="297" bodyend="338"/>
       </memberdef>
       <memberdef kind="function" id="class_s_o_d_a_1a1f1aa095370775ed2d94ca6d842ff213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -622,58 +483,323 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="170" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="334" bodyend="363"/>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="172" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="342" bodyend="371"/>
       </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a135382c3d907496f74c852965b31ffdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::turnOff</definition>
-        <argsstring>()</argsstring>
-        <name>turnOff</name>
+      <memberdef kind="function" id="class_s_o_d_a_1aeb776ca678f15e50781f031cb3f880d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SODA::tcReadT</definition>
+        <argsstring>(int ch)</argsstring>
+        <name>tcReadT</name>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Turns of the datalogger board by resetting the clock alarm pin, thereby shuttting off the voltage regulator. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a6acf21ab1e6db2b8861715e8a5a7f37f" kindref="member">setWake()</ref> </para></simplesect>
+<para>Returns a temperature reading from a type T themocouple. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int argument specifying ADC channel 1,2,3, or 4 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a float value of temperature in degrees C. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="141" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="251" bodyend="257"/>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="178" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="374" bodyend="404"/>
       </memberdef>
-      <memberdef kind="function" id="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void SODA::updateTime</definition>
-        <argsstring>(int val, int place)</argsstring>
-        <name>updateTime</name>
+      <memberdef kind="function" id="class_s_o_d_a_1a55eaa23fbeb729b6d348a0d6c4e3c9b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SODA::smoothAnalogRead</definition>
+        <argsstring>(int pin1)</argsstring>
+        <name>smoothAnalogRead</name>
         <param>
           <type>int</type>
-          <declname>val</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>place</declname>
+          <declname>pin1</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Updates the time array. Need to run setTime to send time array to clock. <parameterlist kind="param"><parameteritem>
+<para>An improved version of analogRead that reduces noise in the measurement <parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>val</parametername>
+<parametername>pin1</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>an int time values. </para></parameterdescription>
+<para>pin number to make reading </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an int value of the average reading (between 0 and 1023). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="184" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="413" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::dataLineBegin</definition>
+        <argsstring>(boolean binary=false, boolean set_end_on_connect=true, boolean set_single_file=true, int sd_cs_pin=17)</argsstring>
+        <name>dataLineBegin</name>
+        <param>
+          <type>boolean</type>
+          <declname>binary</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>set_end_on_connect</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>set_single_file</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sd_cs_pin</declname>
+          <defval>17</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Begins a new dataline and writes the loggerid and current time separated by a comma. The clock is read by the functions so there&apos;s no need to make a seperate call to <ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref>. The function typically begins writing the line to the SD card. If the USB cable is connected it instead writes to the serial monitor. If writing to the SD card, the file is opened and left open until a call to <ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>binary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a boolean indicating whether to write file in binary mode </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>place</parametername>
+<parametername>set_end_on_connect</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>an int specifying the place in the time array (0 = year, 1 = month, 2 = day, 3 = hour, 4 = minute, 5 = second). </para></parameterdescription>
+<para>a boolean indicating whether the file should be closed when a USB connection is detected </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set_single_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a boolean indicating whether to save data to a single file or to create a new file each time. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sd_cs_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int value for the chip-select pin for the SD card. Pin 17 is the default for the normal build. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a69b626b4dfd0847a1d9452ce8faba28e" kindref="member">setTime()</ref> </para><simplesectsep/><para>getTIme() </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a01ecfd6c2f14d0f5507a4384b34fb46a" kindref="member">getID()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" kindref="member">getTime()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1aa79b275be71dbfd5662608add4715b87" kindref="member">setID()</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="90" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="180" bodyend="183"/>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="202" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="431" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::dataLineAdd</definition>
+        <argsstring>(int value)</argsstring>
+        <name>dataLineAdd</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds an int value to the current data line. A comma is placed before the value. param value an int value <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="209" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="493" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a1c38451ceb71b3e644eb16c11fcfacd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::dataLineAdd</definition>
+        <argsstring>(long value)</argsstring>
+        <name>dataLineAdd</name>
+        <param>
+          <type>long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a long value to the current data line. A comma is placed before the value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="216" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="507" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1aa5263a65ba6929e23c85bc0d47bbae32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::dataLineAdd</definition>
+        <argsstring>(float value)</argsstring>
+        <name>dataLineAdd</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a float value to the current data line. A comma is placed before the value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="223" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="521" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1ae41f4913152b2a84fadc563f9beb1de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::dataLineAddBytes</definition>
+        <argsstring>(const void *buffer, int nbytes)</argsstring>
+        <name>dataLineAddBytes</name>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a series of bytes located at buffer and of length nbytes to the current data line. No comma is placed before the value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as const void* </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="230" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="535" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::dataLineEnd</definition>
+        <argsstring>()</argsstring>
+        <name>dataLineEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminates a data line. Adds a carriage return/line feed to the end of the data line and, if writing to the SD card, then closes the file. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="236" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="547" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a6a65882362bba508fbc8c0d5e45badc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::dataDownload</definition>
+        <argsstring>()</argsstring>
+        <name>dataDownload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the contents of the data file from the SD card and streams it through the serial connection. The name of the file is set using #define filename definition at the top of <ref refid="_s_o_d_a_8h" kindref="compound">SODA.h</ref>. <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="244" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="562" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a15a8c710209fd041f14bb448fd17c9b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::communicate</definition>
+        <argsstring>()</argsstring>
+        <name>communicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handles communication between the <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> and a computer/tablet through the serial monitor. Commands are sent through a serial connection using the format [XMORE_INFO] where X is a one-character command and MORE_INFO are optional, additional characters used to complete some commands such as setting the clock. current commands are: [D] downloads the logger file on the sd card</para><para>[I] return the logger_id</para><para>[R] runs through the sketch and normally ouputs a line of current readings to the serial connection.</para><para>[t] prints the current clock time to the serial connection</para><para>[TYYYY-MM-DD HH:MM:SS] sets the clock time <simplesect kind="see"><para><ref refid="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" kindref="member">dataLineBegin()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" kindref="member">dataLineAdd()</ref> </para><simplesectsep/><para><ref refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" kindref="member">dataLineEnd()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>set standby so the clock will be reset properly </para>        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="264" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="588" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1aa79b275be71dbfd5662608add4715b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::setID</definition>
+        <argsstring>(long ID)</argsstring>
+        <name>setID</name>
+        <param>
+          <type>long</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes an logger ID number as a long value to the microcontroller&apos;s EEPROM (address 0 to 3). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a long value to be used as the logger ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="271" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="649" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1a01ecfd6c2f14d0f5507a4384b34fb46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long SODA::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the logger ID stored in microcontroller&apos;s EEPROM. <simplesect kind="return"><para>ID a long integer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="276" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="656" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1af1e78fa91c8cb363a93320acaacf0e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::printBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>printBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints the contents of the buffer[] array, usually a formatted time stamp. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="280" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="61" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="class_s_o_d_a_1a5ef9772aba25fe5b19bc0d647d8c899a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -687,14 +813,39 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="266" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="551" bodyend="553"/>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="285" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="665" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_d_a_1af1752112fc06931fa9634f48cf65e420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SODA::blinks</definition>
+        <argsstring>(int n)</argsstring>
+        <name>blinks</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blinks the led connected to pin 13. Used for simple communications such as to show when a process in under way or finished. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an int that sets the number of times to blink. Each blink = 100 ms on, 100 ms off. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="290" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" bodystart="670" bodyend="679"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>A class to handle basic datalogging functions using Olympia Circuit&apos;s <ref refid="class_s_o_d_a" kindref="compound">SODA</ref> HE 1.0 Arduino-compatible board. </para>    </detaileddescription>
-    <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="64" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="63" bodyend="272"/>
+    <location file="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" line="64" column="1" bodyfile="C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" bodystart="63" bodyend="291"/>
     <listofallmembers>
       <member refid="class_s_o_d_a_1a30b86308dcb295c5e86b79049d3bafdd" prot="public" virt="non-virtual"><scope>SODA</scope><name>adcRead</name></member>
       <member refid="class_s_o_d_a_1af8706c3bd9847ccfc679bd403b21f91e" prot="private" virt="non-virtual"><scope>SODA</scope><name>bcdtodec</name></member>
@@ -707,7 +858,8 @@
       <member refid="class_s_o_d_a_1a00647a29fb7b491d5e455b8b099da5e0" prot="public" virt="non-virtual"><scope>SODA</scope><name>dataLineAdd</name></member>
       <member refid="class_s_o_d_a_1a1c38451ceb71b3e644eb16c11fcfacd7" prot="public" virt="non-virtual"><scope>SODA</scope><name>dataLineAdd</name></member>
       <member refid="class_s_o_d_a_1aa5263a65ba6929e23c85bc0d47bbae32" prot="public" virt="non-virtual"><scope>SODA</scope><name>dataLineAdd</name></member>
-      <member refid="class_s_o_d_a_1a8cd44297bace9494ed073fec5ebfe13a" prot="public" virt="non-virtual"><scope>SODA</scope><name>dataLineBegin</name></member>
+      <member refid="class_s_o_d_a_1ae41f4913152b2a84fadc563f9beb1de5" prot="public" virt="non-virtual"><scope>SODA</scope><name>dataLineAddBytes</name></member>
+      <member refid="class_s_o_d_a_1a8fe9975e114931740d379a3385f0ea3d" prot="public" virt="non-virtual"><scope>SODA</scope><name>dataLineBegin</name></member>
       <member refid="class_s_o_d_a_1a3bdf9101301e2781fe899cb52a59820b" prot="public" virt="non-virtual"><scope>SODA</scope><name>dataLineEnd</name></member>
       <member refid="class_s_o_d_a_1a8a097eefc2f44317c8f1eb0ba81ef088" prot="private" virt="non-virtual"><scope>SODA</scope><name>dectobcd</name></member>
       <member refid="class_s_o_d_a_1a03d84d407029febb5d01d1cee1592a92" prot="private" virt="non-virtual"><scope>SODA</scope><name>getAddress</name></member>
@@ -715,6 +867,7 @@
       <member refid="class_s_o_d_a_1a01ecfd6c2f14d0f5507a4384b34fb46a" prot="public" virt="non-virtual"><scope>SODA</scope><name>getID</name></member>
       <member refid="class_s_o_d_a_1a98719fd95cb6fd3c70f221e62dbf06f4" prot="public" virt="non-virtual"><scope>SODA</scope><name>getStandby</name></member>
       <member refid="class_s_o_d_a_1a126e337a85ae2ff4380d738d8d55ed64" prot="public" virt="non-virtual"><scope>SODA</scope><name>getTime</name></member>
+      <member refid="class_s_o_d_a_1a729d195ccf0c345c4acb299b878fcb8e" prot="private" virt="non-virtual"><scope>SODA</scope><name>incrementName</name></member>
       <member refid="class_s_o_d_a_1aa5d41737ea0ccc85664ee30b9461113c" prot="private" virt="non-virtual"><scope>SODA</scope><name>parseCommand</name></member>
       <member refid="class_s_o_d_a_1af1e78fa91c8cb363a93320acaacf0e7f" prot="public" virt="non-virtual"><scope>SODA</scope><name>printBuffer</name></member>
       <member refid="class_s_o_d_a_1abde23434d6707bcd97e66642a7d2f43d" prot="private" virt="non-virtual"><scope>SODA</scope><name>runSD</name></member>
@@ -727,6 +880,8 @@
       <member refid="class_s_o_d_a_1a55eaa23fbeb729b6d348a0d6c4e3c9b3" prot="public" virt="non-virtual"><scope>SODA</scope><name>smoothAnalogRead</name></member>
       <member refid="class_s_o_d_a_1a13d150b013fa66bc2f181dcfa7a1f0a2" prot="private" virt="non-virtual"><scope>SODA</scope><name>standby</name></member>
       <member refid="class_s_o_d_a_1a1f1aa095370775ed2d94ca6d842ff213" prot="public" virt="non-virtual"><scope>SODA</scope><name>tcReadK</name></member>
+      <member refid="class_s_o_d_a_1aeb776ca678f15e50781f031cb3f880d6" prot="public" virt="non-virtual"><scope>SODA</scope><name>tcReadT</name></member>
+      <member refid="class_s_o_d_a_1a1c3a46ae184ec5c576463398e398d65c" prot="private" virt="non-virtual"><scope>SODA</scope><name>testForConnection</name></member>
       <member refid="class_s_o_d_a_1a135382c3d907496f74c852965b31ffdd" prot="public" virt="non-virtual"><scope>SODA</scope><name>turnOff</name></member>
       <member refid="class_s_o_d_a_1a17bd73a287665e022f8e955db65618b8" prot="public" virt="non-virtual"><scope>SODA</scope><name>updateTime</name></member>
       <member refid="class_s_o_d_a_1a5ef9772aba25fe5b19bc0d647d8c899a" prot="public" virt="non-virtual"><scope>SODA</scope><name>usbConnected</name></member>

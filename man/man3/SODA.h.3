@@ -1,4 +1,4 @@
-.TH "C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" 3 "Mon Jun 9 2014" "SODA Arudino library" \" -*- nroff -*-
+.TH "C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h" 3 "Sun Jun 28 2015" "SODA Arudino library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -22,16 +22,34 @@ C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h \-
 
 .in +1c
 .ti -1c
-.RI "#define \fBADC_12BITS\fP   0x00"
+.RI "#define \fBFILENAME\fP   'DATA\&.CSV'"
 .br
 .ti -1c
-.RI "#define \fBADC_14BITS\fP   0x04"
+.RI "#define \fBCLOCK_I2C_ADDR\fP   0x68"
 .br
 .ti -1c
-.RI "#define \fBADC_16BITS\fP   0x08"
+.RI "#define \fBCLOCK_CONTROL_ADDR\fP   0x0E"
 .br
 .ti -1c
-.RI "#define \fBADC_18BITS\fP   0x0C"
+.RI "#define \fBCLOCK_TEMPERATURE_ADDR\fP   0x11"
+.br
+.ti -1c
+.RI "#define \fBCLOCK_TIME_CAL_ADDR\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCLOCK_SETUP\fP   0x5"
+.br
+.ti -1c
+.RI "#define \fBCLOCK_ALARM1_ADDR\fP   0x07"
+.br
+.ti -1c
+.RI "#define \fBCLOCK_ALARM_STATUS\fP   0x0F"
+.br
+.ti -1c
+.RI "#define \fBADC_I2C_ADDR\fP   0x6E"
+.br
+.ti -1c
+.RI "#define \fBADC_CONTROL\fP   0x00"
 .br
 .ti -1c
 .RI "#define \fBADC_BASE\fP   0x80"
@@ -49,7 +67,16 @@ C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h \-
 .RI "#define \fBADC_CH4\fP   0x60"
 .br
 .ti -1c
-.RI "#define \fBADC_CONTROL\fP   0x00"
+.RI "#define \fBADC_18BITS\fP   0x0C"
+.br
+.ti -1c
+.RI "#define \fBADC_16BITS\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBADC_14BITS\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBADC_12BITS\fP   0x00"
 .br
 .ti -1c
 .RI "#define \fBADC_GAIN1\fP   0x00"
@@ -62,33 +89,6 @@ C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.h \-
 .br
 .ti -1c
 .RI "#define \fBADC_GAIN8\fP   0x03"
-.br
-.ti -1c
-.RI "#define \fBADC_I2C_ADDR\fP   0x6E"
-.br
-.ti -1c
-.RI "#define \fBCLOCK_ALARM1_ADDR\fP   0x07"
-.br
-.ti -1c
-.RI "#define \fBCLOCK_ALARM_STATUS\fP   0x0F"
-.br
-.ti -1c
-.RI "#define \fBCLOCK_CONTROL_ADDR\fP   0x0E"
-.br
-.ti -1c
-.RI "#define \fBCLOCK_I2C_ADDR\fP   0x68"
-.br
-.ti -1c
-.RI "#define \fBCLOCK_SETUP\fP   0x5"
-.br
-.ti -1c
-.RI "#define \fBCLOCK_TEMPERATURE_ADDR\fP   0x11"
-.br
-.ti -1c
-.RI "#define \fBCLOCK_TIME_CAL_ADDR\fP   0x00"
-.br
-.ti -1c
-.RI "#define \fBFILENAME\fP   'DATA\&.CSV'"
 .br
 .ti -1c
 .RI "#define \fBLEDPIN\fP   13"

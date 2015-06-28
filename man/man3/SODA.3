@@ -1,4 +1,4 @@
-.TH "SODA" 3 "Mon Jun 9 2014" "SODA Arudino library" \" -*- nroff -*-
+.TH "SODA" 3 "Sun Jun 28 2015" "SODA Arudino library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,25 +12,55 @@ SODA \-
 
 .in +1c
 .ti -1c
-.RI "long \fBadcRead\fP (int ch, int bit, int gain)"
-.br
-.ti -1c
 .RI "void \fBbegin\fP ()"
 .br
 .ti -1c
-.RI "void \fBblinks\fP (int n)"
-.br
-.ti -1c
-.RI "void \fBbufferTime\fP ()"
+.RI "void \fBupdateTime\fP (int val, int place)"
 .br
 .ti -1c
 .RI "int \fBcheckTime\fP (int place)"
 .br
 .ti -1c
-.RI "void \fBcommunicate\fP ()"
+.RI "void \fBsetTime\fP ()"
 .br
 .ti -1c
-.RI "void \fBdataDownload\fP ()"
+.RI "void \fBgetTime\fP ()"
+.br
+.ti -1c
+.RI "void \fBbufferTime\fP ()"
+.br
+.ti -1c
+.RI "void \fBserialSetTime\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetClockTemp\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWake\fP (int val, int valType)"
+.br
+.ti -1c
+.RI "void \fBturnOff\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetStandby\fP (unsigned char val)"
+.br
+.ti -1c
+.RI "int \fBgetStandby\fP ()"
+.br
+.ti -1c
+.RI "long \fBadcRead\fP (int ch, int bit, int gain)"
+.br
+.ti -1c
+.RI "int \fBtcReadK\fP (int ch)"
+.br
+.ti -1c
+.RI "float \fBtcReadT\fP (int ch)"
+.br
+.ti -1c
+.RI "int \fBsmoothAnalogRead\fP (int pin1)"
+.br
+.ti -1c
+.RI "void \fBdataLineBegin\fP (boolean binary=false, boolean set_end_on_connect=true, boolean set_single_file=true, int sd_cs_pin=17)"
 .br
 .ti -1c
 .RI "void \fBdataLineAdd\fP (int value)"
@@ -42,55 +72,31 @@ SODA \-
 .RI "void \fBdataLineAdd\fP (float value)"
 .br
 .ti -1c
-.RI "void \fBdataLineBegin\fP ()"
+.RI "void \fBdataLineAddBytes\fP (const void *\fBbuffer\fP, int nbytes)"
 .br
 .ti -1c
 .RI "void \fBdataLineEnd\fP ()"
 .br
 .ti -1c
-.RI "float \fBgetClockTemp\fP ()"
+.RI "void \fBdataDownload\fP ()"
 .br
 .ti -1c
-.RI "long \fBgetID\fP ()"
-.br
-.ti -1c
-.RI "int \fBgetStandby\fP ()"
-.br
-.ti -1c
-.RI "void \fBgetTime\fP ()"
-.br
-.ti -1c
-.RI "void \fBprintBuffer\fP ()"
-.br
-.ti -1c
-.RI "void \fBserialSetTime\fP ()"
+.RI "void \fBcommunicate\fP ()"
 .br
 .ti -1c
 .RI "void \fBsetID\fP (long ID)"
 .br
 .ti -1c
-.RI "void \fBsetStandby\fP (unsigned char val)"
+.RI "long \fBgetID\fP ()"
 .br
 .ti -1c
-.RI "void \fBsetTime\fP ()"
-.br
-.ti -1c
-.RI "void \fBsetWake\fP (int val, int valType)"
-.br
-.ti -1c
-.RI "int \fBsmoothAnalogRead\fP (int pin1)"
-.br
-.ti -1c
-.RI "int \fBtcReadK\fP (int ch)"
-.br
-.ti -1c
-.RI "void \fBturnOff\fP ()"
-.br
-.ti -1c
-.RI "void \fBupdateTime\fP (int val, int place)"
+.RI "void \fBprintBuffer\fP ()"
 .br
 .ti -1c
 .RI "bool \fBusbConnected\fP ()"
+.br
+.ti -1c
+.RI "void \fBblinks\fP (int n)"
 .br
 .in -1c
 .SH "Detailed Description"
@@ -229,8 +235,35 @@ Adds a float value to the current data line\&. A comma is placed before the valu
 .RE
 .PP
 
-.SS "void SODA::dataLineBegin ()"
+.SS "void SODA::dataLineAddBytes (const void *buffer, intnbytes)"
+Adds a series of bytes located at buffer and of length nbytes to the current data line\&. No comma is placed before the value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbuffer\fP as const void* 
+.br
+\fInbytes\fP as int value 
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBdataLineAdd()\fP 
+.RE
+.PP
+
+.SS "void SODA::dataLineBegin (booleanbinary = \fCfalse\fP, booleanset_end_on_connect = \fCtrue\fP, booleanset_single_file = \fCtrue\fP, intsd_cs_pin = \fC17\fP)"
 Begins a new dataline and writes the loggerid and current time separated by a comma\&. The clock is read by the functions so there's no need to make a seperate call to \fBgetTime()\fP\&. The function typically begins writing the line to the SD card\&. If the USB cable is connected it instead writes to the serial monitor\&. If writing to the SD card, the file is opened and left open until a call to \fBdataLineEnd()\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbinary\fP a boolean indicating whether to write file in binary mode 
+.br
+\fIset_end_on_connect\fP a boolean indicating whether the file should be closed when a USB connection is detected 
+.br
+\fIset_single_file\fP a boolean indicating whether to save data to a single file or to create a new file each time\&. 
+.br
+\fIsd_cs_pin\fP an int value for the chip-select pin for the SD card\&. Pin 17 is the default for the normal build\&. 
+.RE
 .PP
 \fBSee Also:\fP
 .RS 4
@@ -386,6 +419,20 @@ Returns a temperature reading from a type K themocouple\&.
 \fBReturns:\fP
 .RS 4
 a int value of temperature in degrees C\&. Int is used instead of a float since the precision of the measurement cannot realistically support decimal numbers\&. 
+.RE
+.PP
+
+.SS "float SODA::tcReadT (intch)"
+Returns a temperature reading from a type T themocouple\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIch\fP an int argument specifying ADC channel 1,2,3, or 4 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a float value of temperature in degrees C\&. 
 .RE
 .PP
 

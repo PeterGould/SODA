@@ -1,4 +1,4 @@
-.TH "C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" 3 "Mon Jun 9 2014" "SODA Arudino library" \" -*- nroff -*-
+.TH "C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp" 3 "Sun Jun 28 2015" "SODA Arudino library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -19,12 +19,6 @@ C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp \-
 
 .in +1c
 .ti -1c
-.RI "char \fBbuffer\fP [30]"
-.br
-.ti -1c
-.RI "int \fBbufferIndex\fP = 0"
-.br
-.ti -1c
 .RI "SdFat \fBcard\fP"
 .br
 .ti -1c
@@ -32,6 +26,18 @@ C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp \-
 .br
 .ti -1c
 .RI "int \fBtimeArray\fP [6] = {2010,1,1,12,0,0}"
+.br
+.ti -1c
+.RI "char \fBbuffer\fP [30]"
+.br
+.ti -1c
+.RI "int \fBbufferIndex\fP = 0"
+.br
+.ti -1c
+.RI "boolean \fBend_on_connect\fP = false"
+.br
+.ti -1c
+.RI "boolean \fBsingle_file\fP = false"
 .br
 .in -1c
 .SH "Variable Documentation"
@@ -42,7 +48,11 @@ C:/Users/Peter/Documents/Arduino/libraries/SODA/SODA.cpp \-
 
 .SS "SdFat card"
 
+.SS "boolean end_on_connect = false"
+
 .SS "SdFile file"
+
+.SS "boolean single_file = false"
 
 .SS "int timeArray[6] = {2010,1,1,12,0,0}"
 

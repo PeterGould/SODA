@@ -8,19 +8,39 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-long \hyperlink{class_s_o_d_a_a30b86308dcb295c5e86b79049d3bafdd}{adc\-Read} (int ch, int bit, int gain)
-\item 
 void \hyperlink{class_s_o_d_a_a95ec5e2456f6402478c101dad0b735ce}{begin} ()
 \item 
-void \hyperlink{class_s_o_d_a_af1752112fc06931fa9634f48cf65e420}{blinks} (int n)
-\item 
-void \hyperlink{class_s_o_d_a_a93c1adcc876e1681db69d992153ffb28}{buffer\-Time} ()
+void \hyperlink{class_s_o_d_a_a17bd73a287665e022f8e955db65618b8}{update\-Time} (int val, int place)
 \item 
 int \hyperlink{class_s_o_d_a_a9cca81f7fda16982cc1eb4030774425b}{check\-Time} (int place)
 \item 
-void \hyperlink{class_s_o_d_a_a15a8c710209fd041f14bb448fd17c9b2}{communicate} ()
+void \hyperlink{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{set\-Time} ()
 \item 
-void \hyperlink{class_s_o_d_a_a6a65882362bba508fbc8c0d5e45badc1}{data\-Download} ()
+void \hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time} ()
+\item 
+void \hyperlink{class_s_o_d_a_a93c1adcc876e1681db69d992153ffb28}{buffer\-Time} ()
+\item 
+void \hyperlink{class_s_o_d_a_abac684bb54a9d346337b6e0ed9243e40}{serial\-Set\-Time} ()
+\item 
+float \hyperlink{class_s_o_d_a_abce8c3a638c71d842ab79af3120138c5}{get\-Clock\-Temp} ()
+\item 
+void \hyperlink{class_s_o_d_a_a6acf21ab1e6db2b8861715e8a5a7f37f}{set\-Wake} (int val, int val\-Type)
+\item 
+void \hyperlink{class_s_o_d_a_a135382c3d907496f74c852965b31ffdd}{turn\-Off} ()
+\item 
+void \hyperlink{class_s_o_d_a_aa78eec946be2a371ae844fa44f6e4d96}{set\-Standby} (unsigned char val)
+\item 
+int \hyperlink{class_s_o_d_a_a98719fd95cb6fd3c70f221e62dbf06f4}{get\-Standby} ()
+\item 
+long \hyperlink{class_s_o_d_a_a30b86308dcb295c5e86b79049d3bafdd}{adc\-Read} (int ch, int bit, int gain)
+\item 
+int \hyperlink{class_s_o_d_a_a1f1aa095370775ed2d94ca6d842ff213}{tc\-Read\-K} (int ch)
+\item 
+float \hyperlink{class_s_o_d_a_aeb776ca678f15e50781f031cb3f880d6}{tc\-Read\-T} (int ch)
+\item 
+int \hyperlink{class_s_o_d_a_a55eaa23fbeb729b6d348a0d6c4e3c9b3}{smooth\-Analog\-Read} (int pin1)
+\item 
+void \hyperlink{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{data\-Line\-Begin} (boolean binary=false, boolean set\-\_\-end\-\_\-on\-\_\-connect=true, boolean set\-\_\-single\-\_\-file=true, int sd\-\_\-cs\-\_\-pin=17)
 \item 
 void \hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add} (int value)
 \item 
@@ -28,39 +48,23 @@ void \hyperlink{class_s_o_d_a_a1c38451ceb71b3e644eb16c11fcfacd7}{data\-Line\-Add
 \item 
 void \hyperlink{class_s_o_d_a_aa5263a65ba6929e23c85bc0d47bbae32}{data\-Line\-Add} (float value)
 \item 
-void \hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin} ()
+void \hyperlink{class_s_o_d_a_ae41f4913152b2a84fadc563f9beb1de5}{data\-Line\-Add\-Bytes} (const void $\ast$\hyperlink{_s_o_d_a_8cpp_abb3fb3c13325b6f5206e79234aea8772}{buffer}, int nbytes)
 \item 
 void \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End} ()
 \item 
-float \hyperlink{class_s_o_d_a_abce8c3a638c71d842ab79af3120138c5}{get\-Clock\-Temp} ()
+void \hyperlink{class_s_o_d_a_a6a65882362bba508fbc8c0d5e45badc1}{data\-Download} ()
 \item 
-long \hyperlink{class_s_o_d_a_a01ecfd6c2f14d0f5507a4384b34fb46a}{get\-I\-D} ()
-\item 
-int \hyperlink{class_s_o_d_a_a98719fd95cb6fd3c70f221e62dbf06f4}{get\-Standby} ()
-\item 
-void \hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time} ()
-\item 
-void \hyperlink{class_s_o_d_a_af1e78fa91c8cb363a93320acaacf0e7f}{print\-Buffer} ()
-\item 
-void \hyperlink{class_s_o_d_a_abac684bb54a9d346337b6e0ed9243e40}{serial\-Set\-Time} ()
+void \hyperlink{class_s_o_d_a_a15a8c710209fd041f14bb448fd17c9b2}{communicate} ()
 \item 
 void \hyperlink{class_s_o_d_a_aa79b275be71dbfd5662608add4715b87}{set\-I\-D} (long I\-D)
 \item 
-void \hyperlink{class_s_o_d_a_aa78eec946be2a371ae844fa44f6e4d96}{set\-Standby} (unsigned char val)
+long \hyperlink{class_s_o_d_a_a01ecfd6c2f14d0f5507a4384b34fb46a}{get\-I\-D} ()
 \item 
-void \hyperlink{class_s_o_d_a_a69b626b4dfd0847a1d9452ce8faba28e}{set\-Time} ()
-\item 
-void \hyperlink{class_s_o_d_a_a6acf21ab1e6db2b8861715e8a5a7f37f}{set\-Wake} (int val, int val\-Type)
-\item 
-int \hyperlink{class_s_o_d_a_a55eaa23fbeb729b6d348a0d6c4e3c9b3}{smooth\-Analog\-Read} (int pin1)
-\item 
-int \hyperlink{class_s_o_d_a_a1f1aa095370775ed2d94ca6d842ff213}{tc\-Read\-K} (int ch)
-\item 
-void \hyperlink{class_s_o_d_a_a135382c3d907496f74c852965b31ffdd}{turn\-Off} ()
-\item 
-void \hyperlink{class_s_o_d_a_a17bd73a287665e022f8e955db65618b8}{update\-Time} (int val, int place)
+void \hyperlink{class_s_o_d_a_af1e78fa91c8cb363a93320acaacf0e7f}{print\-Buffer} ()
 \item 
 bool \hyperlink{class_s_o_d_a_a5ef9772aba25fe5b19bc0d647d8c899a}{usb\-Connected} ()
+\item 
+void \hyperlink{class_s_o_d_a_af1752112fc06931fa9634f48cf65e420}{blinks} (int n)
 \end{DoxyCompactItemize}
 
 
@@ -151,7 +155,7 @@ Handles communication between the \hyperlink{class_s_o_d_a}{S\-O\-D\-A} and a co
 \mbox{[}t\mbox{]} prints the current clock time to the serial connection
 
 \mbox{[}T\-Y\-Y\-Y\-Y-\/\-M\-M-\/\-D\-D H\-H\-:\-M\-M\-:S\-S\mbox{]} sets the clock time \begin{DoxySeeAlso}{See Also}
-\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+\hyperlink{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{data\-Line\-Begin()} 
 
 \hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
 
@@ -165,7 +169,7 @@ set standby so the clock will be reset properly \hypertarget{class_s_o_d_a_a6a65
 \end{DoxyParamCaption}
 )}}\label{class_s_o_d_a_a6a65882362bba508fbc8c0d5e45badc1}
 Reads the contents of the data file from the S\-D card and streams it through the serial connection. The name of the file is set using \#define filename definition at the top of \hyperlink{_s_o_d_a_8h}{S\-O\-D\-A.\-h}. \begin{DoxySeeAlso}{See Also}
-\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+\hyperlink{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{data\-Line\-Begin()} 
 
 \hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
 
@@ -179,7 +183,7 @@ Reads the contents of the data file from the S\-D card and streams it through th
 \end{DoxyParamCaption}
 )}}\label{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}
 Adds an int value to the current data line. A comma is placed before the value. param value an int value \begin{DoxySeeAlso}{See Also}
-\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+\hyperlink{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{data\-Line\-Begin()} 
 
 \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
 \end{DoxySeeAlso}
@@ -196,7 +200,7 @@ Adds a long value to the current data line. A comma is placed before the value.
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See Also}
-\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+\hyperlink{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{data\-Line\-Begin()} 
 
 \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
 \end{DoxySeeAlso}
@@ -213,18 +217,50 @@ Adds a float value to the current data line. A comma is placed before the value.
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See Also}
-\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+\hyperlink{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{data\-Line\-Begin()} 
 
 \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
 \end{DoxySeeAlso}
-\hypertarget{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-Begin@{data\-Line\-Begin}}
+\hypertarget{class_s_o_d_a_ae41f4913152b2a84fadc563f9beb1de5}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-Add\-Bytes@{data\-Line\-Add\-Bytes}}
+\index{data\-Line\-Add\-Bytes@{data\-Line\-Add\-Bytes}!SODA@{S\-O\-D\-A}}
+\subsubsection[{data\-Line\-Add\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Line\-Add\-Bytes (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{int}]{nbytes}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_ae41f4913152b2a84fadc563f9beb1de5}
+Adds a series of bytes located at buffer and of length nbytes to the current data line. No comma is placed before the value. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & as const void$\ast$ \\
+\hline
+{\em nbytes} & as int value \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
+\end{DoxySeeAlso}
+\hypertarget{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{\index{S\-O\-D\-A@{S\-O\-D\-A}!data\-Line\-Begin@{data\-Line\-Begin}}
 \index{data\-Line\-Begin@{data\-Line\-Begin}!SODA@{S\-O\-D\-A}}
 \subsubsection[{data\-Line\-Begin}]{\setlength{\rightskip}{0pt plus 5cm}void S\-O\-D\-A\-::data\-Line\-Begin (
 \begin{DoxyParamCaption}
-{}
+\item[{boolean}]{binary = {\ttfamily false}, }
+\item[{boolean}]{set\-\_\-end\-\_\-on\-\_\-connect = {\ttfamily true}, }
+\item[{boolean}]{set\-\_\-single\-\_\-file = {\ttfamily true}, }
+\item[{int}]{sd\-\_\-cs\-\_\-pin = {\ttfamily 17}}
 \end{DoxyParamCaption}
-)}}\label{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}
-Begins a new dataline and writes the loggerid and current time separated by a comma. The clock is read by the functions so there's no need to make a seperate call to \hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time()}. The function typically begins writing the line to the S\-D card. If the U\-S\-B cable is connected it instead writes to the serial monitor. If writing to the S\-D card, the file is opened and left open until a call to \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()}. \begin{DoxySeeAlso}{See Also}
+)}}\label{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}
+Begins a new dataline and writes the loggerid and current time separated by a comma. The clock is read by the functions so there's no need to make a seperate call to \hyperlink{class_s_o_d_a_a126e337a85ae2ff4380d738d8d55ed64}{get\-Time()}. The function typically begins writing the line to the S\-D card. If the U\-S\-B cable is connected it instead writes to the serial monitor. If writing to the S\-D card, the file is opened and left open until a call to \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()}. 
+\begin{DoxyParams}{Parameters}
+{\em binary} & a boolean indicating whether to write file in binary mode \\
+\hline
+{\em set\-\_\-end\-\_\-on\-\_\-connect} & a boolean indicating whether the file should be closed when a U\-S\-B connection is detected \\
+\hline
+{\em set\-\_\-single\-\_\-file} & a boolean indicating whether to save data to a single file or to create a new file each time. \\
+\hline
+{\em sd\-\_\-cs\-\_\-pin} & an int value for the chip-\/select pin for the S\-D card. Pin 17 is the default for the normal build. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
 \hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
 
 \hyperlink{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}{data\-Line\-End()} 
@@ -243,7 +279,7 @@ Begins a new dataline and writes the loggerid and current time separated by a co
 \end{DoxyParamCaption}
 )}}\label{class_s_o_d_a_a3bdf9101301e2781fe899cb52a59820b}
 Terminates a data line. Adds a carriage return/line feed to the end of the data line and, if writing to the S\-D card, then closes the file. \begin{DoxySeeAlso}{See Also}
-\hyperlink{class_s_o_d_a_a8cd44297bace9494ed073fec5ebfe13a}{data\-Line\-Begin()} 
+\hyperlink{class_s_o_d_a_a8fe9975e114931740d379a3385f0ea3d}{data\-Line\-Begin()} 
 
 \hyperlink{class_s_o_d_a_a00647a29fb7b491d5e455b8b099da5e0}{data\-Line\-Add()} 
 \end{DoxySeeAlso}
@@ -395,6 +431,21 @@ Returns a temperature reading from a type K themocouple.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 a int value of temperature in degrees C. Int is used instead of a float since the precision of the measurement cannot realistically support decimal numbers. 
+\end{DoxyReturn}
+\hypertarget{class_s_o_d_a_aeb776ca678f15e50781f031cb3f880d6}{\index{S\-O\-D\-A@{S\-O\-D\-A}!tc\-Read\-T@{tc\-Read\-T}}
+\index{tc\-Read\-T@{tc\-Read\-T}!SODA@{S\-O\-D\-A}}
+\subsubsection[{tc\-Read\-T}]{\setlength{\rightskip}{0pt plus 5cm}float S\-O\-D\-A\-::tc\-Read\-T (
+\begin{DoxyParamCaption}
+\item[{int}]{ch}
+\end{DoxyParamCaption}
+)}}\label{class_s_o_d_a_aeb776ca678f15e50781f031cb3f880d6}
+Returns a temperature reading from a type T themocouple. 
+\begin{DoxyParams}{Parameters}
+{\em ch} & an int argument specifying A\-D\-C channel 1,2,3, or 4 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float value of temperature in degrees C. 
 \end{DoxyReturn}
 \hypertarget{class_s_o_d_a_a135382c3d907496f74c852965b31ffdd}{\index{S\-O\-D\-A@{S\-O\-D\-A}!turn\-Off@{turn\-Off}}
 \index{turn\-Off@{turn\-Off}!SODA@{S\-O\-D\-A}}

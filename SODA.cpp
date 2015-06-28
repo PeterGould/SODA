@@ -336,6 +336,8 @@ long SODA::adcRead(int ch, int bit, int gain){
 	reading = reading * vref;
 	return(reading);
 }
+//Special methods to read temperature from thermocouple wire.
+//Type K
 //read thermocouple and return temperature in degrees C
 int SODA::tcReadK(int ch){
 	//break points for the uV to C and C to uV equations
@@ -350,7 +352,7 @@ int SODA::tcReadK(int ch){
 	long b1[4] = {65986,51452,53746,78962};
 	long b2[4] = {875,406,21,-76};
 	long refPV = long(getClockTemp());
-	long currentuV = adcRead(1,4,4)/1000L;
+	long currentuV = adcRead(ch,4,4)/1000L;
   //figure out which segment to use for temp to uV
   int seg = 0;
   for(int k = 0; k < 3; k++){
@@ -367,6 +369,45 @@ int SODA::tcReadK(int ch){
   currentuV = currentuV/10000L;
   return(int(currentuV));
 }
+//
+//Type T thermocouple
+float SODA::tcReadT(int ch){
+  //break points for the uV to C and C to uV equations
+  long breakuV[3] = {0,4279,14862};
+  long breakC[3] = {0,1000,3000};
+  //coefficients for the uV to C*10**4 equation
+  long a0[4] = {-2592,0,79759,244732};
+  long a1[4] = { 249,257,224,199};
+  long a2[4] = {-13362,-5450,-1879,-918};
+  //coefficients for the C to uV equations
+  long b0[4] = {1947,0,-188639,-804268};
+  long b1[4] = { 3902,3865,4176,4628};
+  long b2[4] = {519,415,281,198};
+  long refPV = long(getClockTemp()*10.0f); //make sure to multiply the float by 10 here
+  long currentuV =  adcRead(ch,4,4);
+  //figure out which segment to use for temp to uV
+  int seg = 0;
+  for(int k = 0; k < 3; k++){
+    if(refPV > breakC[k]) seg++;
+  }
+  refPV = b0[seg] + b1[seg]*refPV + b2[seg]*(refPV*refPV/1000);
+  currentuV = currentuV + refPV;
+  currentuV = currentuV/1000L;
+  //figure out which segment to use for uv to temp
+  seg = 0;
+  for(int k = 0; k < 3; k++){
+    if(currentuV > breakuV[k]) seg++;
+  }
+  currentuV = (a0[seg] + a1[seg]*currentuV + a2[seg]*(currentuV * currentuV/1000000L));
+  currentuV = currentuV/1000L;
+  return(float(currentuV/10.0f));
+}
+
+////////////////////////////////////////////////////////////////
+//End thermocouple section
+////////////////////////////////////////////////////////////// 
+
+
 
 //Average analogRead across 5 measurements to reduce noise
 int SODA::smoothAnalogRead(int pin1){
@@ -533,8 +574,6 @@ void SODA::dataDownload(){
 void SODA::testForConnection(){
 	if(usbConnected() && end_on_connect){
 		dataLineEnd();
-		blinks(3);
-		communicate();
 	}
 	return;
 }
