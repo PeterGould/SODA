@@ -2,6 +2,8 @@
 #include <EEPROM.h>
 #include "SODA.h"
 #include <SdFat.h>
+#include <OneWire.h> 
+
 #ifndef NO_SD
 SdFat card;
 SdFile file;
@@ -336,6 +338,23 @@ long SODA::adcRead(int ch, int bit, int gain){
 	reading = reading * vref;
 	return(reading);
 }
+
+
+//Average analogRead across 5 measurements to reduce noise
+int SODA::smoothAnalogRead(int pin1){
+	int allRead = 0;
+	//dump first reading;
+	allRead = analogRead(pin1);
+	delay(10);
+	allRead = 0;
+	for(int k = 0; k <5; k++){
+		allRead+= analogRead(pin1);
+		delay(5);
+	}
+	allRead = allRead/5;
+	return(allRead);
+}
+
 //Special methods to read temperature from thermocouple wire.
 //Type K
 //read thermocouple and return temperature in degrees C
@@ -407,22 +426,186 @@ float SODA::tcReadT(int ch){
 //End thermocouple section
 ////////////////////////////////////////////////////////////// 
 
+///////////////////////////////////////////////////////////////
+//ds18b20 temperature sensors
+///////////////////////////////////////////////////////////////
 
-
-//Average analogRead across 5 measurements to reduce noise
-int SODA::smoothAnalogRead(int pin1){
-	int allRead = 0;
-	//dump first reading;
-	allRead = analogRead(pin1);
-	delay(10);
-	allRead = 0;
-	for(int k = 0; k <5; k++){
-		allRead+= analogRead(pin1);
-		delay(5);
+float SODA::ds18b20_temp_by_id(uint8_t pin, int id){
+  byte getadd[8];
+  byte temp_data[2];
+  OneWire myds(pin);
+  float celsius = -999.9f;
+  if(!ds18b20_get_address(myds, id,getadd)){
+	  return(celsius); //failed to find device
+  }
+  myds.reset();
+  myds.select(getadd);
+  //start conversion
+  myds.write(0x44,0);  //parasitic power mode off
+	while (!myds.read()) {
+    // do nothing, wait for return
 	}
-	allRead = allRead/5;
-	return(allRead);
+	 myds.reset();
+	 myds.select(getadd);    
+	 myds.write(0xBE);         // Read Scratchpad
+	//pack bytes into the temp_data array
+	 for (int i = 0; i < 2; i++) {      
+		temp_data[i] = myds.read();
+	 }
+         celsius =ds18b20_convert(temp_data,1);
+	 return(celsius);
+  }
+  
+  
+void SODA::ds18b20_read_bus(uint8_t pin, float temp_data[],byte n_sensors){
+  byte dsaddr[8];
+  OneWire myds(pin);
+  int n_found = 0;
+  myds.reset_search();
+  byte ds_data[2];
+  while(myds.search(dsaddr)>0 & n_found < n_sensors){ //search for next device, returns 0 if none found
+	//select unit
+	myds.reset();
+	myds.select(dsaddr);
+	//start conversion
+	 myds.write(0x44,0);  //parasitic power mode off
+	while (!myds.read()) {
+    // do nothing, wait for return
+	}
+	 myds.reset();
+	 myds.select(dsaddr);    
+	 myds.write(0xBE);         // Read Scratchpad
+	//read bytes
+	 ds_data[0] = myds.read();
+	 ds_data[1] = myds.read();
+	 temp_data[n_found] = ds18b20_convert(ds_data,1);
+	
+  }//end loop through sensors
+} 
+ 
+float SODA::ds18b20_convert(byte temp_data[],int sensor){ 
+  float celsius;
+  unsigned int TReading = (temp_data[(sensor-1)*2 +1] << 8) + temp_data[(sensor-1)*2];
+  unsigned int SignBit = TReading & 0x8000;  // test most sig bit
+  if (SignBit) // negative
+  {
+    TReading = (TReading ^ 0xffff) + 1; // 2's comp
+  }
+  celsius = float(TReading)/16;
+  if (SignBit){
+    celsius = celsius * -1;
+  }
+  return celsius;
 }
+
+///find address by ID
+int SODA::ds18b20_get_address(OneWire myds, int id, byte getadd[]){
+  int success = 0;
+  int found ;
+  byte dsaddr[8];
+  myds.reset_search(); //start new search each time
+  while(myds.search(dsaddr)>0 && success < 1){
+    myds.reset();
+    myds.select(dsaddr);    
+    myds.write(0xBE);         // Read Scratchpad
+    //pack bytes into the temp_data array
+	found = 0;
+    for (int i = 0; i < 3; i++) { 
+      byte a_byte = myds.read();    
+      if(i==2) found = found | a_byte;
+    }
+    if(found==id){
+      success=1;
+      for(int i = 0; i < 8;i++){
+        getadd[i] = dsaddr[i];
+      }
+    }
+  }
+  return(success);
+}
+
+
+///assign ID numbers to temperature sensors
+int SODA::ds18b20_set_id(uint8_t pin, int id, int resolution){
+  byte dsaddr[8];
+  OneWire myds(pin);
+  int completed = 0;
+  while(myds.search(dsaddr)>0){
+	  // Get byte for desired resolution
+	  byte resbyte = 0x1F;
+	  if (resolution == 12){
+		resbyte = 0x7F;
+	  }
+	  else if (resolution == 11) {
+		resbyte = 0x5F;
+	  }
+	  else if (resolution == 10) {
+		resbyte = 0x3F;
+	  }
+	  myds.reset();
+	  myds.select(dsaddr);
+	  myds.write(0x4E);         // Write scratchpad
+	  myds.write(byte(id));     // TL
+	  myds.write(0);            // TH
+	  myds.write(resbyte);         // Configuration Register
+	  myds.reset();
+	  myds.select(dsaddr);
+	  myds.write(0x48);         // Copy Scratchpad
+	  delay(40);
+	  myds.reset();
+	  myds.select(dsaddr); 
+	  myds.write(0xB8);  //copy EEPROM to Scratchpad
+	  delay(40);
+	  myds.reset();
+	  myds.select(dsaddr); 
+	  myds.write(0xBE);         // Read Scratchpad
+	  int read_back = 0;
+	  for (int i = 0; i < 3; i++) { 
+		byte a_byte = myds.read();    
+		if(i==2) read_back = read_back | a_byte;
+	  }
+	  myds.reset();
+	  if(read_back == id) completed++;
+  } //end loop through sensors
+  return(completed);
+}
+/////////////////////////////////////////////////////////////////////////////////
+//End DS18b20 temperature sensor section
+//////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+//Decagon EC-20 Soil Moisture sensor
+//Excitation = white wire
+//Ground = bare wire
+//analog output = red wire
+//testing has shown that these units only get to about 1.2V output in water when excited with 3.3V so the 2.56 V reference is used.
+//Equation is for mineral soil taken from the EC20 Manual and reformulated for 3.3V excitation and 2.56V reference.
+float SODA::ec20Read(int pin_read, int pin_excite, int pin_ground){
+	int read;
+	if(pin_excite != 0){
+		pinMode(pin_excite,OUTPUT);
+		digitalWrite(pin_excite,HIGH);
+	}
+	if(pin_ground!=0){
+		pinMode(pin_ground,OUTPUT);
+		digitalWrite(pin_ground,LOW);
+	}
+	pinMode(pin_read,INPUT_PULLUP);
+	delay(10);
+	read = smoothAnalogRead(pin_read);
+	if(read > 800) return(-999.9f); //this indicates an open circuits, reading equals pull up resistor
+	analogReference(INTERNAL); //2.56 V reference on Atmega32U4
+	pinMode(pin_read,INPUT);
+	delay(10);
+	read = smoothAnalogRead(pin_read);
+	analogReference(DEFAULT);
+	float vwc =  0.2253788f*float(read) - 40.1f;
+	if(vwc < 0.0f) vwc = 0.0f;
+	if(vwc > 100.0f) vwc = 100.0f;
+	return(vwc);
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////
 //@I SD Card Functions
@@ -561,6 +744,7 @@ void SODA::dataLineEnd(){
 
 void SODA::dataDownload(){
 #ifndef NO_SD
+	card.begin(17,SPI_HALF_SPEED);
 	if(!file.isOpen()) file.open(FILENAME, O_CREAT | O_APPEND | O_WRITE | O_READ);
 	char data;
 	unsigned long nBytes = 0;
@@ -570,9 +754,27 @@ void SODA::dataDownload(){
 #endif
 }
 
+//archive the current data file
+void SODA::dataArchive(){
+#ifndef NO_SD
+	card.begin(17,SPI_HALF_SPEED);
+	char nextFile[] = "F001.DAT";
+	int k = 0;
+	while(card.exists(nextFile) && k < 501){
+		k++;
+		incrementName(nextFile,k);
+	}
+	if(k < 500){
+		card.rename(FILENAME,nextFile);
+	}
+	blinks(3);
+#endif
+}
+		
+
 //handle interruptions while file is writting and USB is connected.
 void SODA::testForConnection(){
-	if(usbConnected() && end_on_connect){
+	if(usbConnected() && end_on_connect && file.isOpen()){
 		dataLineEnd();
 	}
 	return;
@@ -622,6 +824,9 @@ void SODA::parseCommand(char command){
 	Serial.print('[');
 	Serial.print(command);
 	switch (command) {
+	case 'A':
+		dataArchive();
+	break;
     case 'T':
       serialSetTime();
       break;
@@ -636,7 +841,7 @@ void SODA::parseCommand(char command){
 		Serial.print("]"); //don't change this to println.  The CRLF will mess things up
 		dataDownload();
 	break;
-      // default is optional
+	// default is optional
 	}
 	Serial.println(']');
 }

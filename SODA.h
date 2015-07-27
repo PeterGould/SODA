@@ -29,6 +29,7 @@
 #define __SODA__h
 #include <Arduino.h>
 #include <Wire.h>
+#include <OneWire.h>
 //clock values
 #define CLOCK_I2C_ADDR   0x68
 #define CLOCK_CONTROL_ADDR 0x0E
@@ -182,6 +183,51 @@ class SODA
 		*@return an int value of the average reading (between 0 and 1023).
 		*/
 		int smoothAnalogRead(int pin1);
+		//////////////////////////////////////////////////////////////////////////////////////////////////
+		//ds18b20 functions
+		/////////////////////////////////////////////////////////////////////////////////////////////////
+		/**
+		*Returns the temperature from a DS18B20 temperature sensor with tagged with an id value.
+		*@param pin pin number of 1wire data bus
+		*/
+		float ds18b20_temp_by_id(uint8_t pin, int id);
+		/**
+		*Reads the temperature values for all DS18B20 temperature sensors on the bus connected to the 'pin'.
+		*@param pin pin number of 1wire data bus
+		*@param temp_data an array of float values from the sensors
+		*@param n_sensors the number of sensors on the bus
+		*/
+		void ds18b20_read_bus(uint8_t pin, float temp_data[],byte n_sensors);
+		/**
+		*Converts two-byte readings from DS18B20 to Celsius temperature values
+		*@param temp_data an array of temperature readings with two bytes per reading
+		*@param sensor the number of sensors (length of temp_data should be 2x sensors).
+		*/
+		float ds18b20_convert(byte temp_data[],int sensor);
+		/**
+		*Retrieves the 64 bit address for a sensor tagged by id.
+		*@param myds oneWire bus object
+		*@param id the ID tag stored in the DS18B20 non-volatile memory.
+		*@param get_add a byte array of length 8 that stores the device address.
+		*/
+		int ds18b20_get_address(OneWire myds, int id, byte getadd[]);
+		/**
+		*Tags a DS18B20 temperature sensor with an ID number to make it easier to reference a sensor without knowing the much longer address. 
+		*It tags all sensors on the bus with the same address to make batch programming easier.
+		*@param pin pin number of 1wire data bus.
+		*@param id the ID value.
+		*@param resolution the bit resolution of the temperature measurements (9 to 12).
+		*/
+		int ds18b20_set_id(uint8_t pin, int id, int resolution);
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//@I Decagon Soil Moisture Sensor
+		/**
+		*Reads a Decagon EC20 soil moisture sensor and returns volumetric soils water content as a percentage.
+		*@param pin_read pin number for analog read.
+		*@param pin_excite pin number for positive excitation voltage. This pin is set to a digital high during the reading and then reset to an input afer the reading is completed. Set to zero if not used.
+		*@param pin_ground pin number for negative excitation voltage. Set to digital low during reading and then reset to an analog ground. Set to zero if not used.
+		*/ 
+		float ec20Read(int pin_read, int pin_excite, int pin_ground);
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//@I Data output functions
 		/**
@@ -242,6 +288,11 @@ class SODA
 		*@see dataLineEnd()
 		*/
 		void dataDownload();
+		
+		/**
+		*Archives the current data. Archive files have a format of F123.dat.  Archiving is useful for dataloggers that are downloaded repeatedly so that the user does not have to download the same data multiple times.
+		*/
+		void dataArchive();
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//@I communication functions
 		/**Handles communication between the SODA and a computer/tablet through the serial monitor.  
